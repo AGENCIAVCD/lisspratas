@@ -77,8 +77,6 @@ export function StarterKitSection() {
           </div>
         </Reveal>
       </div>
-
-      <div className="section-notch" />
     </section>
   );
 }

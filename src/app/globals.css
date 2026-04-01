@@ -132,13 +132,6 @@ button {
     background: linear-gradient(90deg, rgba(53, 14, 9, 0), rgba(53, 14, 9, 0.16), rgba(53, 14, 9, 0));
   }
 
-  .section-notch {
-    @apply absolute left-1/2 h-12 w-24 -translate-x-1/2 rounded-b-[999px] border-x border-b;
-    bottom: -1px;
-    border-color: rgba(53, 14, 9, 0.06);
-    background: inherit;
-  }
-
   .brand-lockup {
     display: inline-flex;
     align-items: flex-end;

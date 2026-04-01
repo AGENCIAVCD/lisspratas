@@ -35,8 +35,6 @@ export function BenefitsSection() {
           </p>
         </Reveal>
       </div>
-
-      <div className="section-notch" />
     </section>
   );
 }
