@@ -1,26 +1,19 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 
-const brand = localFont({
-  src: "./fonts/RaflesiaRegular.ttf",
+const brand = Cormorant_Garamond({
+  subsets: ["latin"],
   variable: "--font-brand",
+  weight: ["400", "500", "600"],
+  display: "swap",
 });
 
-const sans = localFont({
-  src: [
-    {
-      path: "./fonts/CocoGothic.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/CocoGothic-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
+const sans = Manrope({
+  subsets: ["latin"],
   variable: "--font-body",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

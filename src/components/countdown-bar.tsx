@@ -121,18 +121,30 @@ export function CountdownBar() {
           </div>
         </div>
 
-        <div className="mt-3 flex flex-col gap-2 rounded-[1.15rem] border border-white/8 bg-white/4 px-4 py-3 lg:mt-4 lg:flex-row lg:items-center lg:justify-between lg:px-5">
-          <div className="flex items-center gap-3">
+        <div className="mt-3 rounded-[1.15rem] border border-white/8 bg-white/4 px-4 py-3 lg:mt-4 lg:px-5">
+          <div className="hidden items-center gap-3 lg:flex">
             <span className="h-2 w-2 rounded-full bg-[var(--silver-400)]" />
             <p className="text-[0.54rem] font-semibold uppercase tracking-[0.3em] text-white/48">
               Faltam poucos dias para a estreia da LISS
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 text-[var(--silver-400)] lg:gap-5">
+          <div className="mb-2 flex items-center justify-between lg:hidden">
+            <p className="text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-white/52">
+              Contagem para a estreia
+            </p>
+            <p className="text-[0.62rem] font-medium uppercase tracking-[0.22em] text-[var(--silver-400)]">
+              {eventDateLabel}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-4 gap-2 text-[var(--silver-400)] lg:mt-0 lg:flex lg:flex-wrap lg:items-center lg:gap-5">
             {units.map((unit, index) => (
-              <div key={unit.key} className="flex items-center gap-3">
-                <div className="flex items-end gap-2">
+              <div
+                key={unit.key}
+                className="flex min-w-0 flex-col items-center justify-center rounded-[0.9rem] border border-white/8 bg-[rgba(255,255,255,0.03)] px-2 py-2.5 lg:flex-row lg:gap-3 lg:border-0 lg:bg-transparent lg:px-0 lg:py-0"
+              >
+                <div className="flex items-end gap-1 lg:gap-2">
                   <AnimatePresence mode="popLayout">
                     <motion.span
                       key={timeLeft[unit.key]}
@@ -140,12 +152,12 @@ export function CountdownBar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -8 }}
                       transition={{ duration: 0.18 }}
-                      className="min-w-[2ch] text-[1.45rem] font-bold leading-none tracking-[-0.06em]"
+                      className="min-w-[2ch] text-[1.05rem] font-bold leading-none tracking-[-0.06em] lg:text-[1.45rem]"
                     >
                       {timeLeft[unit.key]}
                     </motion.span>
                   </AnimatePresence>
-                  <span className="pb-0.5 text-[0.56rem] font-semibold uppercase tracking-[0.24em] text-white/36">
+                  <span className="pb-0.5 text-[0.46rem] font-semibold uppercase tracking-[0.2em] text-white/40 lg:text-[0.56rem] lg:tracking-[0.24em]">
                     {unit.suffix}
                   </span>
                 </div>
