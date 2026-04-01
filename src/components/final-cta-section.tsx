@@ -10,47 +10,48 @@ export function FinalCtaSection() {
         <Reveal className="max-w-lg">
           <span className="eyebrow">Informações importantes</span>
           <h2 className="mt-7 text-[2.7rem] leading-[1.02] text-[var(--coffee-900)] sm:text-[3.7rem]">
-            Tudo o que você precisa saber para entrar na estreia da LISS.
+            Entre na live com tudo claro antes da estreia começar.
           </h2>
           <div className="mt-8 space-y-4">
             {finalInfo.map((item) => (
               <div
                 key={item}
-                className="flex gap-4 text-[1rem] leading-8 text-[rgba(53,29,23,0.8)]"
+                className="flex gap-4 text-[1rem] leading-8 text-[rgba(58,58,58,0.82)]"
               >
-                <span className="mt-3 h-2.5 w-2.5 rounded-full bg-[var(--coffee-700)]" />
+                <span className="mt-3 h-2.5 w-2.5 rounded-full bg-[var(--coffee-900)]" />
                 <span>{item}</span>
               </div>
             ))}
           </div>
-          <p className="mt-7 text-sm uppercase tracking-[0.24em] text-[rgba(53,14,9,0.58)]">
+          <p className="mt-7 text-sm uppercase tracking-[0.24em] text-[rgba(58,58,58,0.58)]">
             Data oficial | {eventDateLabel}
           </p>
         </Reveal>
 
-        <Reveal delay={0.1} className="soft-panel rounded-[2.8rem] bg-[rgba(248,237,228,0.58)] p-8 sm:p-12">
+        <Reveal delay={0.1} className="soft-panel rounded-[2.8rem] bg-[rgba(255,255,255,0.96)] p-8 sm:p-12">
           <div className="flex flex-col items-center text-center">
-            <BrandMark size="footer" className="justify-center" />
+            <BrandMark size="footer" variant="positive" className="mx-auto" />
             <div className="note-line mt-8 max-w-[28rem]" />
-            <div className="mt-8 max-w-[34rem] space-y-5 text-[1.1rem] leading-9 text-[rgba(53,29,23,0.8)]">
+            <div className="mt-8 max-w-[34rem] space-y-5 text-[1.1rem] leading-9 text-[rgba(58,58,58,0.82)]">
               <p>
-                Você sabe quando uma marca muda de nome, de linguagem e de
-                postura, o mercado inteiro começa a olhar diferente.
+                No atacado, quem chega cedo entende a novidade primeiro, usa a
+                melhor condição e começa a vender com mais argumento.
               </p>
               <p>
-                A LISS estreia ao vivo para marcar exatamente esse momento.
-                Presença, oportunidade e incentivo comercial no mesmo palco.
+                A live da LISS não é só uma apresentação de marca. É o momento
+                em que você conhece a nova fase antes, concorre aos kits e
+                libera o cupom ao vivo.
               </p>
               <p className="font-semibold text-[var(--coffee-900)]">
-                Essa é a hora de assistir de perto, entrar cedo e agir com mais
-                vantagem.
+                Se faz sentido vender com mais força, essa live faz sentido
+                para você.
               </p>
             </div>
             <div className="mt-10">
-              <PrimaryCta label="Garantir meu lugar na live" />
+              <PrimaryCta label="Garantir meu lugar na estreia" />
             </div>
-            <p className="mt-4 text-[0.8rem] uppercase tracking-[0.2em] text-[rgba(53,14,9,0.56)]">
-              Ao vivo | 10 kits | cupom ao vivo
+            <p className="mt-4 text-[0.8rem] uppercase tracking-[0.2em] text-[rgba(58,58,58,0.56)]">
+              Ao vivo | 10 starter kits | cupom de 20% off
             </p>
           </div>
         </Reveal>

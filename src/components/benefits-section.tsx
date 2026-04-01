@@ -7,9 +7,9 @@ export function BenefitsSection() {
     <section id="beneficios" className="section-light relative py-24 sm:py-28">
       <div className="section-shell">
         <Reveal className="mx-auto max-w-3xl text-center">
-          <span className="eyebrow">Esse evento é para você que</span>
+          <span className="eyebrow">Essa live foi feita para quem quer vender melhor</span>
           <h2 className="display-copy mt-7 text-[3.1rem] text-[var(--coffee-900)] sm:text-[4.2rem]">
-            quer entrar na nova fase da LISS com vantagem.
+            Se você quer revender com mais desejo, mais confiança e mais vantagem, seu lugar é aqui.
           </h2>
         </Reveal>
 
@@ -20,18 +20,18 @@ export function BenefitsSection() {
               delay={index * 0.05}
               className="soft-panel rounded-[2rem] p-7"
             >
-              <div className="mb-8 flex h-10 w-10 items-center justify-center rounded-2xl border border-[rgba(53,14,9,0.1)] bg-[rgba(244,228,214,0.58)] text-[var(--coffee-700)]">
+              <div className="mb-8 flex h-10 w-10 items-center justify-center rounded-2xl border border-[rgba(53,14,9,0.12)] bg-[rgba(199,199,199,0.22)] text-[var(--coffee-900)]">
                 ↗
               </div>
-              <p className="text-[1rem] leading-8 text-[rgba(53,29,23,0.82)]">{item}</p>
+              <p className="text-[1rem] leading-8 text-[rgba(58,58,58,0.82)]">{item}</p>
             </Reveal>
           ))}
         </div>
 
         <Reveal delay={0.18} className="mt-12 flex flex-col items-center">
-          <PrimaryCta label="Garantir meu lugar" />
-          <p className="mt-4 text-[0.8rem] uppercase tracking-[0.2em] text-[rgba(53,14,9,0.56)]">
-            Ao vivo | relançamento LISS
+          <PrimaryCta label="Quero participar da live" />
+          <p className="mt-4 text-[0.8rem] uppercase tracking-[0.2em] text-[rgba(58,58,58,0.56)]">
+            Ao vivo | benefícios liberados durante a transmissão
           </p>
         </Reveal>
       </div>

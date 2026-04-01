@@ -3,17 +3,17 @@ import { footerLinks } from "@/lib/site-data";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-[rgba(53,14,9,0.08)] bg-[#fffdfa] py-10">
+    <footer className="border-t border-[rgba(58,58,58,0.1)] bg-white py-10">
       <div className="section-shell flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <BrandMark size="footer" />
-          <p className="mt-3 max-w-lg text-sm leading-7 text-[rgba(53,29,23,0.58)]">
-            LISS, a nova fase do atacado revelada ao vivo com identidade mais
-            refinada, percepção premium e foco em conversão.
+          <BrandMark size="footer" variant="positive" />
+          <p className="mt-3 max-w-lg text-sm leading-7 text-[rgba(58,58,58,0.62)]">
+            LISS, a nova fase do atacado em prata para quem quer vender com
+            mais força de marca, mais desejo e mais argumento comercial.
           </p>
         </div>
 
-        <div className="flex flex-col items-start gap-3 text-sm text-[rgba(53,29,23,0.58)] lg:items-end">
+        <div className="flex flex-col items-start gap-3 text-sm text-[rgba(58,58,58,0.62)] lg:items-end">
           <div className="flex flex-wrap gap-4">
             {footerLinks.map((item) => (
               <a

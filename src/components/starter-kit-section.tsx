@@ -22,9 +22,9 @@ export function StarterKitSection() {
                 {column.items.map((item) => (
                   <li
                     key={item}
-                    className="flex gap-4 text-[1.02rem] leading-8 text-[rgba(53,29,23,0.8)]"
+                    className="flex gap-4 text-[1.02rem] leading-8 text-[rgba(58,58,58,0.82)]"
                   >
-                    <span className="mt-3 h-2 w-2 rounded-full bg-[var(--coffee-700)]" />
+                    <span className="mt-3 h-2 w-2 rounded-full bg-[var(--coffee-900)]" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -34,16 +34,16 @@ export function StarterKitSection() {
         </div>
 
         <Reveal delay={0.18} className="mt-16 grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">
-          <div className="soft-panel rounded-[2.4rem] bg-[rgba(255,253,250,0.72)] p-8 sm:p-10">
+          <div className="soft-panel rounded-[2.4rem] bg-[rgba(255,255,255,0.96)] p-8 sm:p-10">
             <span className="eyebrow">Starter Kit</span>
             <h3 className="mt-6 text-[2.5rem] leading-[1.02] text-[var(--coffee-900)] sm:text-[3.3rem]">
-              Comece vendendo com um kit pensado para acelerar sua entrada.
+              Os Starter Kits foram pensados para quem quer começar vendendo, não apenas assistindo.
             </h3>
             <div className="mt-7 space-y-4">
               {starterKitPoints.map((item) => (
                 <div
                   key={item}
-                  className="flex gap-4 text-[1rem] leading-8 text-[rgba(53,29,23,0.82)]"
+                  className="flex gap-4 text-[1rem] leading-8 text-[rgba(58,58,58,0.82)]"
                 >
                   <span className="mt-3 h-2.5 w-2.5 rounded-full bg-[var(--coffee-900)]" />
                   <span>{item}</span>
@@ -51,12 +51,12 @@ export function StarterKitSection() {
               ))}
             </div>
             <div className="mt-8">
-              <PrimaryCta label="Quero concorrer ao starter kit" />
+              <PrimaryCta label="Quero concorrer aos kits" />
             </div>
           </div>
 
           <div className="relative min-h-[440px]">
-            <div className="absolute left-[8%] top-8 h-[250px] w-[66%] overflow-hidden rounded-[2.2rem] shadow-[0_22px_40px_rgba(89,50,40,0.12)]">
+            <div className="absolute left-[8%] top-8 h-[250px] w-[66%] overflow-hidden rounded-[2.2rem] border border-[rgba(199,199,199,0.44)] shadow-[0_22px_40px_rgba(58,58,58,0.12)]">
               <Image
                 src="/manual/app-22.png"
                 alt="Tag e cartão da LISS"
@@ -65,7 +65,7 @@ export function StarterKitSection() {
                 sizes="(max-width: 1024px) 100vw, 34vw"
               />
             </div>
-            <div className="absolute bottom-0 right-[4%] h-[320px] w-[58%] overflow-hidden rounded-[2.2rem] shadow-[0_22px_40px_rgba(89,50,40,0.12)]">
+            <div className="absolute bottom-0 right-[4%] h-[320px] w-[58%] overflow-hidden rounded-[2.2rem] border border-[rgba(199,199,199,0.44)] shadow-[0_22px_40px_rgba(58,58,58,0.12)]">
               <Image
                 src="/manual/app-23.png"
                 alt="Joia e embalagem da LISS"

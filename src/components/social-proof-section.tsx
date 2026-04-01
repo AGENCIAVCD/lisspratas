@@ -7,13 +7,14 @@ export function SocialProofSection() {
     <section id="autoridade" className="section-warm relative py-24 sm:py-28">
       <div className="section-shell grid gap-14 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
         <Reveal className="max-w-xl">
-          <span className="eyebrow">A verdade por trás da nova identidade</span>
+          <span className="eyebrow">Por que essa nova fase vende melhor</span>
           <h2 className="display-copy mt-7 text-[3rem] text-[var(--coffee-900)] sm:text-[4rem]">
-            Uma marca mais refinada cria uma percepção mais forte.
+            Quando a marca transmite mais valor, vender fica mais fácil.
           </h2>
           <p className="body-copy mt-6">
-            A LISS nasce com linguagem visual própria, aplicações reais e um
-            desenho de marca que comunica valor antes mesmo da venda acontecer.
+            No atacado, percepção importa. A LISS nasce com identidade,
+            embalagem e presença para ajudar você a apresentar melhor, despertar
+            mais desejo e vender com mais segurança.
           </p>
 
           <div className="mt-9 grid gap-6">
@@ -26,7 +27,7 @@ export function SocialProofSection() {
                 <h3 className="text-[1.55rem] leading-tight text-[var(--coffee-900)]">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-[1rem] leading-8 text-[rgba(53,29,23,0.78)]">
+                <p className="mt-2 text-[1rem] leading-8 text-[rgba(58,58,58,0.8)]">
                   {item.description}
                 </p>
               </Reveal>
@@ -44,7 +45,7 @@ export function SocialProofSection() {
               sizes="(max-width: 1024px) 100vw, 28vw"
             />
           </div>
-          <div className="absolute bottom-[2%] right-[2%] z-20 h-[72%] w-[52%] overflow-hidden rounded-[2.4rem] bg-white/70 p-3 shadow-[0_24px_50px_rgba(89,50,40,0.14)]">
+          <div className="absolute bottom-[2%] right-[2%] z-20 h-[72%] w-[52%] overflow-hidden rounded-[2.4rem] border border-[rgba(199,199,199,0.5)] bg-[rgba(255,255,255,0.88)] p-3 shadow-[0_24px_50px_rgba(58,58,58,0.14)]">
             <div className="relative h-full w-full overflow-hidden rounded-[2rem]">
               <Image
                 src="/manual/app-21.png"

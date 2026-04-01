@@ -8,7 +8,7 @@ export function StorySection() {
       <div className="section-shell grid gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
         <Reveal className="max-w-xl">
           <p className="text-sm font-semibold uppercase tracking-[0.26em] text-[rgba(53,14,9,0.5)]">
-            Você já conhece o mercado. Agora precisa sentir a virada da marca.
+            A história mudou. A oportunidade também.
           </p>
           <div className="mt-8 space-y-6">
             {transitionParagraphs.map((paragraph) => (
@@ -19,7 +19,7 @@ export function StorySection() {
           </div>
 
           <div className="mt-8">
-            <PrimaryCta label="Entrar na live da nova fase" />
+            <PrimaryCta label="Quero ver essa virada ao vivo" />
           </div>
         </Reveal>
 

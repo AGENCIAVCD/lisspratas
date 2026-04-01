@@ -75,11 +75,11 @@ export function CountdownBar() {
         <div className="flex flex-col gap-3 lg:grid lg:grid-cols-[auto_1fr_auto] lg:items-center lg:gap-8">
           <div className="flex items-center justify-between gap-4 lg:justify-start">
             <a href="#topo" className="flex items-center gap-4">
-              <BrandMark size="header" className="text-[var(--champagne-100)]" />
+              <BrandMark size="header" variant="negative" />
               <div className="hidden h-11 w-px bg-white/10 lg:block" />
               <div className="hidden lg:block">
                 <p className="text-[0.54rem] font-semibold uppercase tracking-[0.3em] text-white/42">
-                  Live de relançamento
+                  Estreia oficial
                 </p>
                 <p className="mt-1 text-[0.75rem] uppercase tracking-[0.22em] text-white/72">
                   {eventDateLabel}
@@ -91,7 +91,7 @@ export function CountdownBar() {
               href={registrationUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex rounded-full border border-white/12 px-4 py-2 text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-[var(--champagne-100)] hover:bg-white/6 lg:hidden"
+              className="inline-flex rounded-full border border-white/12 px-4 py-2 text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-[var(--silver-400)] hover:bg-white/6 lg:hidden"
             >
               Entrar
             </a>
@@ -102,7 +102,7 @@ export function CountdownBar() {
               <a
                 key={item.href}
                 href={item.href}
-                className="hover:text-[var(--champagne-100)]"
+                className="hover:text-[var(--silver-400)]"
               >
                 {item.label}
               </a>
@@ -114,7 +114,7 @@ export function CountdownBar() {
               href={registrationUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex rounded-full border border-white/12 px-5 py-2.5 text-[0.6rem] font-semibold uppercase tracking-[0.26em] text-[var(--champagne-100)] hover:bg-white/6"
+              className="inline-flex rounded-full border border-white/12 px-5 py-2.5 text-[0.6rem] font-semibold uppercase tracking-[0.26em] text-[var(--silver-400)] hover:bg-white/6"
             >
               Garantir meu lugar
             </a>
@@ -123,13 +123,13 @@ export function CountdownBar() {
 
         <div className="mt-3 flex flex-col gap-2 rounded-[1.15rem] border border-white/8 bg-white/4 px-4 py-3 lg:mt-4 lg:flex-row lg:items-center lg:justify-between lg:px-5">
           <div className="flex items-center gap-3">
-            <span className="h-2 w-2 rounded-full bg-[var(--champagne-300)]" />
+            <span className="h-2 w-2 rounded-full bg-[var(--silver-400)]" />
             <p className="text-[0.54rem] font-semibold uppercase tracking-[0.3em] text-white/48">
-              Contagem regressiva para a estreia da LISS
+              Faltam poucos dias para a estreia da LISS
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 text-[var(--champagne-100)] lg:gap-5">
+          <div className="flex flex-wrap items-center gap-3 text-[var(--silver-400)] lg:gap-5">
             {units.map((unit, index) => (
               <div key={unit.key} className="flex items-center gap-3">
                 <div className="flex items-end gap-2">
