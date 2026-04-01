@@ -1,6 +1,23 @@
+import {
+  ChatIcon,
+  CompassIcon,
+  GemIcon,
+  ShieldIcon,
+  SparkIcon,
+  TicketIcon,
+} from "@/components/benefit-icons";
 import { PrimaryCta } from "@/components/primary-cta";
 import { Reveal } from "@/components/reveal";
 import { audienceItems } from "@/lib/site-data";
+
+const benefitIcons = [
+  GemIcon,
+  SparkIcon,
+  ChatIcon,
+  ShieldIcon,
+  TicketIcon,
+  CompassIcon,
+];
 
 export function BenefitsSection() {
   return (
@@ -20,8 +37,11 @@ export function BenefitsSection() {
               delay={index * 0.05}
               className="soft-panel rounded-[2rem] p-7"
             >
-              <div className="mb-8 flex h-10 w-10 items-center justify-center rounded-2xl border border-[rgba(53,14,9,0.12)] bg-[rgba(199,199,199,0.22)] text-[var(--coffee-900)]">
-                ↗
+              <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-[1.35rem] border border-[rgba(53,14,9,0.14)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(199,199,199,0.16))] text-[var(--coffee-900)] shadow-[0_10px_24px_rgba(58,58,58,0.08)]">
+                {(() => {
+                  const Icon = benefitIcons[index % benefitIcons.length];
+                  return <Icon />;
+                })()}
               </div>
               <p className="text-[1rem] leading-8 text-[rgba(58,58,58,0.82)]">{item}</p>
             </Reveal>

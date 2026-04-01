@@ -88,6 +88,37 @@ export const authorityPoints = [
   },
 ];
 
+export const visualShowcaseSlides = [
+  {
+    name: "A estreia que prende o olhar.",
+    designation: "Imagem forte desde o primeiro contato",
+    quote:
+      "Na live, você vai ver como a nova fase da LISS já nasce com apresentação forte para chamar atenção, gerar desejo e fazer o produto parecer ainda mais valioso.",
+    src: "/manual/app-21.png",
+  },
+  {
+    name: "Embalagem que valoriza a venda.",
+    designation: "Experiência mais premium ao receber",
+    quote:
+      "Caixa, pouch e acabamento ajudam a sustentar uma percepção mais refinada, facilitando a venda e deixando a entrega muito mais memorável para a cliente.",
+    src: "/manual/app-25.png",
+  },
+  {
+    name: "Visual pronto para catálogo e stories.",
+    designation: "Mais facilidade para divulgar",
+    quote:
+      "Quem acompanhar a live entende como essa nova fase pode ser apresentada no Instagram, no WhatsApp e no atendimento com muito mais segurança e apelo comercial.",
+    src: "/manual/app-22.png",
+  },
+  {
+    name: "Uma nova fase feita para vender melhor.",
+    designation: "Desejo, clareza e oportunidade",
+    quote:
+      "A proposta da estreia é simples: mostrar por que entrar cedo nessa fase da LISS pode dar mais vantagem, mais clareza e mais força para começar ou acelerar as vendas.",
+    src: "/manual/app-23.png",
+  },
+];
+
 export const finalInfo = [
   "Transmissão ao vivo em 16 de abril de 2026.",
   "Sorteio de 10 Starter Kits para quem acompanhar a live.",
