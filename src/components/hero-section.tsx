@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section
       id="topo"
-      className="section-warm relative overflow-hidden pb-14 pt-28 sm:pb-16 sm:pt-30 lg:min-h-[calc(100svh-112px)] lg:pb-16 lg:pt-24"
+      className="section-warm relative overflow-hidden pb-14 pt-40 sm:pb-16 sm:pt-44 lg:min-h-[calc(100svh-144px)] lg:pb-16 lg:pt-40"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_30%,rgba(199,199,199,0.36),transparent_24%),linear-gradient(90deg,rgba(255,255,255,0.92),rgba(255,255,255,0.28)_60%)]" />
       <div className="absolute right-[-5%] top-[12%] hidden h-[680px] w-[680px] rounded-full border border-[rgba(199,199,199,0.5)] lg:block" />
@@ -21,13 +21,13 @@ export function HeroSection() {
           <div className="mt-8">
             <BrandMark size="hero" variant="positive" />
           </div>
-          <h1 className="display-copy mt-6 max-w-[13ch] text-[2.65rem] text-[var(--coffee-900)] sm:text-[3.4rem] lg:text-[4.35rem]">
+          <h1 className="display-copy mt-6 max-w-[16ch] text-[2.32rem] leading-[0.94] text-[var(--coffee-900)] sm:max-w-[14ch] sm:text-[3.4rem] lg:max-w-[13ch] lg:text-[4.35rem]">
             A nova fase da LISS estreia ao vivo para quem quer vender primeiro.
           </h1>
           <p className="body-copy mt-6 max-w-[34rem]">
-            A Madagi Pratas Atacado evoluiu. Agora o atacado ganha identidade
-            própria, posicionamento mais forte e benefícios exclusivos para
-            quem acompanhar essa virada desde o começo.
+            A Madagi Pratas Atacado entra em uma nova fase. E quem estiver na
+            live vai entender primeiro a novidade, liberar benefícios
+            exclusivos e sair com mais clareza para começar ou vender melhor.
           </p>
 
           <div className="note-line mt-7 max-w-[23rem]" />

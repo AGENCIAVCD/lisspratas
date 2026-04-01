@@ -38,9 +38,8 @@ export function FinalCtaSection() {
                 melhor condição e começa a vender com mais argumento.
               </p>
               <p>
-                A live da LISS não é só uma apresentação de marca. É o momento
-                em que você conhece a nova fase antes, concorre aos kits e
-                libera o cupom ao vivo.
+                A live da LISS é o momento em que você conhece essa nova fase
+                antes, concorre aos kits e libera o cupom ao vivo.
               </p>
               <p className="font-semibold text-[var(--coffee-900)]">
                 Se faz sentido vender com mais força, essa live faz sentido

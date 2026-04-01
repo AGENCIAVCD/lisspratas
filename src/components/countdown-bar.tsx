@@ -2,6 +2,7 @@
 
 import { BrandMark } from "@/components/brand-mark";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import {
   countdownTarget,
   eventDateLabel,
@@ -75,7 +76,19 @@ export function CountdownBar() {
         <div className="flex flex-col gap-3 lg:grid lg:grid-cols-[auto_1fr_auto] lg:items-center lg:gap-8">
           <div className="flex items-center justify-between gap-4 lg:justify-start">
             <a href="#topo" className="flex items-center gap-4">
-              <BrandMark size="header" variant="negative" />
+              <span className="block lg:hidden">
+                <Image
+                  src="/brand/favicon-source.png"
+                  alt="Monograma LISS"
+                  width={34}
+                  height={34}
+                  className="h-[2.125rem] w-[2.125rem]"
+                  priority
+                />
+              </span>
+              <span className="hidden lg:block">
+                <BrandMark size="header" variant="negative" />
+              </span>
               <div className="hidden h-11 w-px bg-white/10 lg:block" />
               <div className="hidden lg:block">
                 <p className="text-[0.54rem] font-semibold uppercase tracking-[0.3em] text-white/42">
@@ -85,15 +98,6 @@ export function CountdownBar() {
                   {eventDateLabel}
                 </p>
               </div>
-            </a>
-
-            <a
-              href={registrationUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex rounded-full border border-white/12 px-4 py-2 text-[0.58rem] font-semibold uppercase tracking-[0.22em] text-[var(--silver-400)] hover:bg-white/6 lg:hidden"
-            >
-              Entrar
             </a>
           </div>
 
@@ -121,7 +125,7 @@ export function CountdownBar() {
           </div>
         </div>
 
-        <div className="mt-3 rounded-[1.15rem] border border-white/8 bg-white/4 px-4 py-3 lg:mt-4 lg:px-5">
+        <div className="mt-3 rounded-[1.15rem] border border-white/8 bg-white/4 px-4 py-3 lg:mx-auto lg:mt-4 lg:flex lg:w-fit lg:items-center lg:justify-center lg:gap-8 lg:px-6 lg:py-3.5">
           <div className="hidden items-center gap-3 lg:flex">
             <span className="h-2 w-2 rounded-full bg-[var(--silver-400)]" />
             <p className="text-[0.54rem] font-semibold uppercase tracking-[0.3em] text-white/48">
@@ -138,7 +142,7 @@ export function CountdownBar() {
             </p>
           </div>
 
-          <div className="grid grid-cols-4 gap-2 text-[var(--silver-400)] lg:mt-0 lg:flex lg:flex-wrap lg:items-center lg:gap-5">
+          <div className="grid grid-cols-4 gap-2 text-[var(--silver-400)] lg:mt-0 lg:flex lg:flex-wrap lg:items-center lg:gap-4">
             {units.map((unit, index) => (
               <div
                 key={unit.key}

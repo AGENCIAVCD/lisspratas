@@ -8,8 +8,8 @@ export function SiteFooter() {
         <div>
           <BrandMark size="footer" variant="positive" />
           <p className="mt-3 max-w-lg text-sm leading-7 text-[rgba(58,58,58,0.62)]">
-            LISS, a nova fase do atacado em prata para quem quer vender com
-            mais força de marca, mais desejo e mais argumento comercial.
+            Acompanhe a estreia da LISS ao vivo e aproveite a nova fase com
+            mais vantagem para vender.
           </p>
         </div>
 

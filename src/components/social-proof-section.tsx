@@ -12,9 +12,8 @@ export function SocialProofSection() {
             Quando a marca transmite mais valor, vender fica mais fácil.
           </h2>
           <p className="body-copy mt-6">
-            No atacado, percepção importa. A LISS nasce com identidade,
-            embalagem e presença para ajudar você a apresentar melhor, despertar
-            mais desejo e vender com mais segurança.
+            Na live, você vai entender por que essa nova fase ajuda a chamar
+            mais atenção, despertar mais desejo e vender com mais segurança.
           </p>
 
           <div className="mt-9 grid gap-6">
