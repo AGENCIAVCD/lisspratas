@@ -13,29 +13,33 @@ export const metadata: Metadata = {
 export default function AGrandeRevelacaoPage() {
   return (
     <main className="section-warm min-h-screen">
-      <section className="section-shell flex min-h-screen items-center justify-center py-16 sm:py-20">
-        <div className="flex w-full max-w-4xl flex-col items-center gap-8 text-center sm:gap-10">
-          <BrandMark size="hero" variant="positive" className="mx-auto" />
+      <section className="section-shell flex min-h-screen items-center justify-center py-6 sm:py-10">
+        <div className="flex w-full max-w-md flex-col items-center gap-5 text-center sm:gap-7">
+          <BrandMark
+            size="hero"
+            variant="positive"
+            className="mx-auto w-[8.5rem] sm:w-[10.5rem]"
+          />
 
-          <h1 className="display-copy max-w-[12ch] text-[3rem] text-[var(--coffee-900)] sm:text-[4.4rem]">
-            A grande revelacao esta chegando.
+          <h1 className="display-copy max-w-[10ch] text-[2.15rem] text-[var(--coffee-900)] sm:text-[3.1rem]">
+            A grande revelacao esta chegando
           </h1>
 
-          <div className="soft-panel relative w-full max-w-3xl overflow-hidden rounded-[2.6rem] p-3 sm:p-4">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] sm:aspect-[16/10]">
+          <div className="soft-panel relative w-full overflow-hidden rounded-[2rem] p-2.5 sm:p-3">
+            <div className="relative aspect-[1/1] overflow-hidden rounded-[1.5rem] sm:aspect-[4/5]">
               <Image
                 src="/manual/app-21.png"
                 alt="Imagem teaser da revelacao"
                 fill
                 priority
-                sizes="(max-width: 1024px) 100vw, 960px"
+                sizes="(max-width: 640px) 92vw, 420px"
                 className="scale-110 object-cover object-center blur-[18px]"
               />
-              <ImageRevealOverlay />
+              <ImageRevealOverlay compact />
             </div>
           </div>
 
-          <PrimaryCta label="Garantir meu lugar" />
+          <PrimaryCta label="Garantir meu lugar" className="w-full" />
         </div>
       </section>
     </main>
