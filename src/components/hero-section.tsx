@@ -23,7 +23,7 @@ export function HeroSection() {
             <BrandMark size="hero" variant="positive" />
           </div>
           <h1 className="display-copy mt-6 max-w-[16ch] text-[2.32rem] leading-[0.94] text-[var(--coffee-900)] sm:max-w-[14ch] sm:text-[3.4rem] lg:max-w-[13ch] lg:text-[4.35rem]">
-            A nova fase da LISS estreia ao vivo para quem quer sair na frente.
+            A nova marca será apresentada ao vivo para quem quer sair na frente.
           </h1>
           <p className="body-copy mt-6 max-w-[34rem]">
             A Madagi Pratas Atacado entra em uma nova fase. Quem estiver na
@@ -55,7 +55,7 @@ export function HeroSection() {
             <div className="relative h-full w-full overflow-hidden rounded-[1.6rem]">
               <Image
                 src="/manual/app-24.png"
-                alt="Aplicação de papelaria da LISS"
+                alt="Aplicação visual da nova marca"
                 fill
                 className="scale-110 object-cover object-center blur-[16px]"
                 sizes="180px"
@@ -69,7 +69,7 @@ export function HeroSection() {
             <div className="absolute bottom-0 right-[6%] z-20 h-[82%] w-[76%] overflow-hidden rounded-[2.4rem]">
               <Image
                 src="/manual/app-21.png"
-                alt="Embalagem premium da LISS com joias"
+                alt="Embalagem premium da nova marca"
                 fill
                 priority
                 className="scale-110 object-cover object-center blur-[18px]"
@@ -80,7 +80,7 @@ export function HeroSection() {
             <div className="absolute right-[2%] top-[18%] z-30 hidden h-[280px] w-[148px] lg:block">
               <Image
                 src="/manual/app-25.png"
-                alt="Pouch e caixa da LISS"
+                alt="Pouch e caixa da nova marca"
                 fill
                 className="scale-110 object-contain object-center blur-[16px]"
                 sizes="148px"

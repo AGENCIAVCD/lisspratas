@@ -9,9 +9,9 @@ import { StarterKitSection } from "@/components/starter-kit-section";
 import { StorySection } from "@/components/story-section";
 
 export const metadata: Metadata = {
-  title: "LISS | Live de relançamento",
+  title: "Madagi Atacado | Live de apresentação da nova marca",
   description:
-    "Participe da estreia da LISS em 16 de abril de 2026. Conheça a nova fase do atacado, concorra a 10 Starter Kits e desbloqueie 20% OFF durante a live.",
+    "Participe da live de apresentação da nova marca em 16 de abril de 2026. Conheça a nova fase do atacado, concorra a 10 Starter Kits e desbloqueie 20% OFF durante a transmissão.",
 };
 
 export default function Home() {

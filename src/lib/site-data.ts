@@ -1,6 +1,6 @@
 export const countdownTarget = "2026-04-16T00:00:00-03:00";
 export const eventDateLabel = "16 de abril de 2026";
-export const registrationUrl = "https://example.com/live-liss";
+export const registrationUrl = "https://example.com/live-nova-marca";
 
 export const navigationLinks = [
   { label: "Nova fase", href: "#historia" },
@@ -11,20 +11,20 @@ export const navigationLinks = [
 
 export const manifestoPoints = [
   {
-    title: "O atacado continua forte. Agora, com mais força para vender.",
+    title: "O atacado segue forte. E uma nova fase está prestes a começar.",
     description:
-      "A LISS chega para ajudar você a vender com mais confiança, mais desejo e mais valor percebido em cada atendimento.",
+      "Essa apresentação foi criada para mostrar o que muda, por que isso importa e como aproveitar melhor essa novidade desde o começo.",
   },
   {
-    title: "Quem assistir à estreia entra primeiro nessa nova fase.",
+    title: "Quem assistir à live vai entender tudo antes do restante do mercado.",
     description:
-      "Na live, você conhece a novidade em primeira mão, entende os benefícios desse início e sai com mais segurança para aproveitar a oportunidade.",
+      "Na transmissão, você conhece a nova marca em primeira mão, entende os benefícios dessa virada e sai com mais clareza para agir rápido.",
   },
 ];
 
 export const transitionParagraphs = [
   "A Madagi Pratas Atacado nasceu da parceria entre dois irmãos. Com a separação dos caminhos, o varejo seguiu sua própria trajetória e o atacado abriu um novo capítulo.",
-  "Esse novo capítulo agora tem nome: LISS. Em 16 de abril de 2026, essa estreia acontece ao vivo para revendedoras, lojistas e empreendedoras que querem chegar cedo e aproveitar da melhor forma essa nova fase.",
+  "Em 16 de abril de 2026, esse novo capítulo será apresentado ao vivo para revendedoras, lojistas e empreendedoras que querem chegar cedo e aproveitar da melhor forma essa nova fase.",
 ];
 
 export const audienceItems = [
@@ -43,7 +43,7 @@ export const experienceColumns = [
     items: [
       "Participa do sorteio de 10 Starter Kits prontos para começar a vender.",
       "Descobre ao vivo o cupom de 20% OFF para aproveitar essa nova fase com vantagem.",
-      "Entende como vender a LISS com mais desejo e mais valor percebido.",
+      "Entende como apresentar a nova marca com mais desejo e mais valor percebido.",
       "Vê como essa nova fase pode ajudar você a começar com mais força desde o primeiro contato.",
     ],
   },
@@ -93,7 +93,7 @@ export const visualShowcaseSlides = [
     name: "A estreia que prende o olhar.",
     designation: "Imagem forte desde o primeiro contato",
     quote:
-      "Na live, você vai ver como a nova fase da LISS já nasce com uma apresentação forte para chamar atenção, gerar desejo e valorizar ainda mais o produto.",
+      "Na live, você vai ver como a nova marca nasce com uma apresentação forte para chamar atenção, gerar desejo e valorizar ainda mais o produto.",
     src: "/manual/app-21.png",
   },
   {
@@ -114,7 +114,7 @@ export const visualShowcaseSlides = [
     name: "Uma nova fase feita para vender melhor.",
     designation: "Desejo, clareza e oportunidade",
     quote:
-      "A proposta da estreia é simples: mostrar por que entrar cedo nessa fase da LISS pode trazer mais vantagem, mais clareza e mais força para começar ou acelerar as vendas.",
+      "A proposta da estreia é simples: mostrar por que entrar cedo nessa nova fase pode trazer mais vantagem, mais clareza e mais força para começar ou acelerar as vendas.",
     src: "/manual/app-23.png",
   },
 ];

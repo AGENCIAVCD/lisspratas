@@ -8,8 +8,8 @@ export function SiteFooter() {
         <div>
           <BrandMark size="footer" variant="positive" />
           <p className="mt-3 max-w-lg text-sm leading-7 text-[rgba(58,58,58,0.62)]">
-            Acompanhe a estreia da LISS ao vivo e aproveite essa nova fase com
-            mais vantagem para vender.
+            Acompanhe a apresentação da nova marca ao vivo e aproveite essa
+            nova fase com mais vantagem para vender.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export function SiteFooter() {
               </a>
             ))}
           </div>
-          <p>© 2026 LISS. Todos os direitos reservados.</p>
+          <p>© 2026 Madagi Atacado. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

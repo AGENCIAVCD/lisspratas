@@ -39,8 +39,9 @@ export function FinalCtaSection() {
                 argumento.
               </p>
               <p>
-                A live da LISS é o momento em que você conhece essa nova fase
-                em primeira mão, concorre aos kits e libera o cupom ao vivo.
+                A live de apresentação é o momento em que você conhece essa
+                nova fase em primeira mão, concorre aos kits e libera o cupom
+                ao vivo.
               </p>
               <p className="font-semibold text-[var(--coffee-900)]">
                 Se vender com mais força faz sentido para você, essa live

@@ -116,7 +116,7 @@ export function CountdownBar() {
           <div className="hidden items-center gap-3 lg:flex">
             <span className="h-2 w-2 rounded-full bg-[var(--silver-400)]" />
             <p className="text-[0.54rem] font-semibold uppercase tracking-[0.3em] text-white/48">
-              Faltam poucos dias para a estreia da LISS
+              Faltam poucos dias para a revelação da nova marca
             </p>
           </div>
 

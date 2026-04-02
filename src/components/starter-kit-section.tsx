@@ -60,7 +60,7 @@ export function StarterKitSection() {
             <div className="absolute left-[8%] top-8 h-[250px] w-[66%] overflow-hidden rounded-[2.2rem] border border-[rgba(199,199,199,0.44)] shadow-[0_22px_40px_rgba(58,58,58,0.12)]">
               <Image
                 src="/manual/app-22.png"
-                alt="Tag e cartão da LISS"
+                alt="Tag e cartão da nova marca"
                 fill
                 className="scale-110 object-cover object-center blur-[18px]"
                 sizes="(max-width: 1024px) 100vw, 34vw"
@@ -70,7 +70,7 @@ export function StarterKitSection() {
             <div className="absolute bottom-0 right-[4%] h-[320px] w-[58%] overflow-hidden rounded-[2.2rem] border border-[rgba(199,199,199,0.44)] shadow-[0_22px_40px_rgba(58,58,58,0.12)]">
               <Image
                 src="/manual/app-23.png"
-                alt="Joia e embalagem da LISS"
+                alt="Joia e embalagem da nova marca"
                 fill
                 className="scale-110 object-cover object-center blur-[18px]"
                 sizes="(max-width: 1024px) 100vw, 28vw"
