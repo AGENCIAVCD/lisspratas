@@ -1,12 +1,11 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { useRouter } from "next/navigation";
+import { vipGroupUrl } from "@/lib/site-data";
 
 export function OportunidadeForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const router = useRouter();
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -48,7 +47,7 @@ export function OportunidadeForm() {
         throw new Error("Falha ao enviar o cadastro.");
       }
 
-      router.push("/obrigado");
+      window.location.assign(vipGroupUrl);
     } catch {
       setErrorMessage(
         "Nao foi possivel concluir seu cadastro agora. Tente novamente em instantes.",

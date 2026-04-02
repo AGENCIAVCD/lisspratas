@@ -163,3 +163,43 @@ button {
     letter-spacing: 0.34em;
   }
 }
+
+@keyframes opportunity-form-pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(53, 14, 9, 0.32),
+      0 28px 80px rgba(58, 58, 58, 0.14);
+    transform: scale(1);
+  }
+
+  38% {
+    box-shadow:
+      0 0 0 16px rgba(53, 14, 9, 0),
+      0 32px 86px rgba(53, 14, 9, 0.18);
+    transform: scale(1.01);
+  }
+
+  72% {
+    box-shadow:
+      0 0 0 8px rgba(53, 14, 9, 0.08),
+      0 28px 80px rgba(58, 58, 58, 0.14);
+    transform: scale(1);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(53, 14, 9, 0),
+      0 28px 80px rgba(58, 58, 58, 0.14);
+    transform: scale(1);
+  }
+}
+
+.opportunity-form-anchor {
+  transition:
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.opportunity-form-anchor.is-highlighted {
+  animation: opportunity-form-pulse 1.4s ease-out;
+}

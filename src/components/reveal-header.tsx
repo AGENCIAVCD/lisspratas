@@ -2,7 +2,8 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { countdownTarget, registrationUrl } from "@/lib/site-data";
-import { useEffect, useState } from "react";
+import { scrollToHighlightTarget } from "@/lib/scroll-to-highlight-target";
+import { MouseEvent, useEffect, useState } from "react";
 
 type TimeLeft = {
   days: string;
@@ -40,8 +41,17 @@ const units: Array<{ key: keyof TimeLeft; label: string }> = [
   { key: "minutes", label: "min" },
 ];
 
-export function RevealHeader() {
+type RevealHeaderProps = {
+  ctaHref?: string;
+  highlightTargetId?: string;
+};
+
+export function RevealHeader({
+  ctaHref = registrationUrl,
+  highlightTargetId,
+}: RevealHeaderProps) {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(initialTimeLeft);
+  const isExternalLink = /^https?:\/\//.test(ctaHref);
 
   useEffect(() => {
     const sync = window.setTimeout(() => setTimeLeft(getTimeLeft()), 0);
@@ -52,6 +62,15 @@ export function RevealHeader() {
       window.clearInterval(timer);
     };
   }, []);
+
+  function handleClick(event: MouseEvent<HTMLAnchorElement>) {
+    if (!highlightTargetId) {
+      return;
+    }
+
+    event.preventDefault();
+    scrollToHighlightTarget(highlightTargetId);
+  }
 
   return (
     <motion.header
@@ -92,9 +111,10 @@ export function RevealHeader() {
         </div>
 
         <a
-          href={registrationUrl}
-          target="_blank"
-          rel="noreferrer"
+          href={ctaHref}
+          onClick={highlightTargetId ? handleClick : undefined}
+          target={isExternalLink ? "_blank" : undefined}
+          rel={isExternalLink ? "noreferrer" : undefined}
           className="inline-flex shrink-0 rounded-full border border-[rgba(53,14,9,0.12)] bg-[var(--coffee-900)] px-4 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.22em] text-white shadow-[0_14px_28px_rgba(53,14,9,0.16)] hover:-translate-y-0.5"
         >
           Garantir meu lugar
