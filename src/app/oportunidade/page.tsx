@@ -66,67 +66,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,244,239,0.88),rgba(248,244,239,0.68),#f8f4ef)]" />
           </div>
 
-          <div className="section-shell relative z-10 grid items-center gap-12 py-16 md:min-h-[calc(100svh-7rem)] md:grid-cols-2">
-            <Reveal className="order-2 text-center md:order-1 md:text-left">
-              <p className="mb-4 text-[0.74rem] font-semibold uppercase tracking-[0.3em] text-[rgba(58,58,58,0.5)]">
+          <div className="section-shell relative z-10 grid items-center gap-10 py-10 md:min-h-[calc(100svh-7rem)] md:grid-cols-[0.88fr_1.12fr] md:gap-14 lg:gap-18">
+            <Reveal className="order-2 max-w-xl text-center md:order-1 md:text-left">
+              <p className="mb-5 text-[0.72rem] font-semibold uppercase tracking-[0.32em] text-[rgba(58,58,58,0.48)]">
                 Evento exclusivo
               </p>
-              <h1 className="display-copy text-[3rem] leading-[1.02] text-[var(--coffee-900)] sm:text-[4.3rem] lg:text-[5rem]">
-                Uma nova era
-                <br />
-                <span className="font-semibold">esta chegando</span>
+              <h1 className="display-copy text-[3.1rem] leading-[0.92] text-[var(--coffee-900)] sm:text-[4.3rem] lg:max-w-[9ch] lg:text-[5.15rem]">
+                Uma nova fase pensada para quem quer chegar primeiro.
               </h1>
-              <p className="mx-auto mt-6 max-w-[34rem] text-[1rem] leading-8 text-[rgba(58,58,58,0.76)] md:mx-0 md:text-[1.05rem]">
+              <p className="mx-auto mt-6 max-w-[32rem] text-[1rem] leading-8 text-[rgba(58,58,58,0.76)] md:mx-0 md:text-[1.05rem]">
                 A Madagi Atacado esta preparando uma nova fase. Participe da live
                 exclusiva e descubra em primeira mao a mudanca, os beneficios e
                 as condicoes especiais reservadas para quem entrar cedo.
               </p>
-              <div className="mt-8 flex justify-center md:justify-start">
-                <PrimaryCta label="Quero participar da live" />
+              <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
+                <span className="rounded-full border border-[rgba(53,14,9,0.1)] bg-white/70 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[rgba(53,14,9,0.56)]">
+                  Ao vivo
+                </span>
+                <span className="rounded-full border border-[rgba(53,14,9,0.1)] bg-white/70 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[rgba(53,14,9,0.56)]">
+                  Acesso gratuito
+                </span>
+                <span className="rounded-full border border-[rgba(53,14,9,0.1)] bg-white/70 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[rgba(53,14,9,0.56)]">
+                  Vagas limitadas
+                </span>
               </div>
-              <p className="mt-4 text-xs tracking-[0.08em] text-[rgba(58,58,58,0.54)]">
-                Vagas limitadas • acesso gratuito
-              </p>
             </Reveal>
 
             <Reveal delay={0.15} className="order-1 flex justify-center md:order-2">
-              <div className="relative w-full max-w-[26rem]">
-                <div className="absolute -inset-4 rounded-[2rem] bg-[radial-gradient(circle,rgba(199,199,199,0.28),transparent_68%)] blur-2xl" />
-                <div className="absolute -left-2 top-8 hidden w-[12rem] overflow-hidden rounded-[1.5rem] shadow-[0_24px_60px_rgba(58,58,58,0.14)] md:block">
-                  <div className="relative aspect-[4/5]">
+              <div className="relative w-full max-w-[38rem]">
+                <div className="absolute right-[6%] top-[4%] h-[72%] w-[66%] rounded-[2.4rem] bg-[rgba(153,125,97,0.28)]" />
+                <div className="relative mx-auto w-[18rem] md:ml-auto md:mr-0 md:w-[22rem] lg:w-[24rem]">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-[0_30px_80px_rgba(58,58,58,0.18)]">
                     <Image
                       src="/oportunidade/expert-1.jpg"
                       alt="Especialista da Madagi Atacado"
                       fill
-                      sizes="192px"
+                      priority
+                      sizes="(max-width: 768px) 72vw, 420px"
                       className="object-cover object-center"
                     />
                   </div>
                 </div>
-                <div className="relative ml-auto w-[20rem] rounded-[1.6rem] bg-white p-5 shadow-[0_30px_80px_rgba(58,58,58,0.16)] sm:w-[24rem] sm:p-6">
-                  <div className="rounded-[1.35rem] border border-[rgba(53,14,9,0.08)] bg-[linear-gradient(180deg,rgba(248,244,239,0.82),rgba(255,255,255,0.98))] p-5 sm:p-6">
-                    <p className="text-[0.66rem] font-semibold uppercase tracking-[0.3em] text-[rgba(58,58,58,0.46)]">
+
+                <div className="relative mx-auto -mt-8 w-full max-w-[22rem] rounded-[1.8rem] bg-white p-4 shadow-[0_28px_80px_rgba(58,58,58,0.14)] md:absolute md:bottom-[3%] md:left-0 md:mt-0 md:max-w-[21rem] lg:max-w-[22rem]">
+                  <div className="rounded-[1.45rem] border border-[rgba(53,14,9,0.08)] bg-[linear-gradient(180deg,rgba(248,244,239,0.9),rgba(255,255,255,0.98))] p-5 sm:p-6">
+                    <p className="text-[0.64rem] font-semibold uppercase tracking-[0.3em] text-[rgba(58,58,58,0.46)]">
                       Garanta seu acesso
                     </p>
-                    <h3 className="mt-3 text-[1.8rem] leading-[1.02] text-[var(--coffee-900)]">
+                    <h3 className="mt-3 text-[1.65rem] leading-[1.02] text-[var(--coffee-900)]">
                       Entre na lista da live
                     </h3>
                     <p className="mt-3 text-sm leading-7 text-[rgba(58,58,58,0.68)]">
-                      Preencha abaixo para receber a comunicacao e entrar antes
-                      da abertura geral.
+                      Preencha para receber a comunicacao e entrar antes da
+                      abertura geral.
                     </p>
                     <OportunidadeForm />
-                  </div>
-                </div>
-                <div className="mx-auto mt-5 w-[15rem] overflow-hidden rounded-[1.5rem] shadow-[0_24px_60px_rgba(58,58,58,0.14)] md:hidden">
-                  <div className="relative aspect-[4/5]">
-                    <Image
-                      src="/oportunidade/expert-1.jpg"
-                      alt="Especialista da Madagi Atacado"
-                      fill
-                      sizes="240px"
-                      className="object-cover object-center"
-                    />
                   </div>
                 </div>
               </div>
