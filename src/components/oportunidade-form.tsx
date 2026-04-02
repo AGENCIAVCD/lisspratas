@@ -50,7 +50,7 @@ export function OportunidadeForm() {
       window.location.href = vipGroupUrl;
     } catch {
       setErrorMessage(
-        "Nao foi possivel concluir seu cadastro agora. Tente novamente em instantes.",
+        "Não foi possível concluir seu cadastro agora. Tente novamente em instantes.",
       );
       setIsSubmitting(false);
     }

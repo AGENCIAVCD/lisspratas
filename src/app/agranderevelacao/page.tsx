@@ -6,7 +6,7 @@ import { PrimaryCta } from "@/components/primary-cta";
 import { RevealHeader } from "@/components/reveal-header";
 
 export const metadata: Metadata = {
-  title: "A Grande Revelacao",
+  title: "A Grande Revelação",
   description:
     "Acompanhe a live que apresenta a nova fase da Madagi Atacado.",
 };
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const attractives = [
   "Sorteio de 10 Starter Kits para quem acompanhar a live.",
   "Cupom de 20% OFF liberado ao vivo.",
-  "Apresentacao completa da nova marca em primeira mao.",
+  "Apresentação completa da nova marca em primeira mão.",
 ];
 
 export default function AGrandeRevelacaoPage() {
@@ -55,7 +55,7 @@ export default function AGrandeRevelacaoPage() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
                 <Image
                   src="/manual/app-21.png"
-                  alt="Imagem teaser da revelacao"
+                  alt="Imagem teaser da revelação"
                   fill
                   priority
                   sizes="(max-width: 640px) 92vw, 432px"
@@ -71,27 +71,27 @@ export default function AGrandeRevelacaoPage() {
           <div className="mx-auto grid w-full max-w-5xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             <div>
               <p className="text-[0.66rem] font-semibold uppercase tracking-[0.34em] text-[rgba(53,14,9,0.46)]">
-                A historia ate aqui
+                A história até aqui
               </p>
               <h2 className="display-copy mt-4 max-w-[12ch] text-[2.1rem] leading-[0.94] text-[var(--coffee-900)] sm:text-[3.2rem]">
-                A Madagi Atacado construiu base. Agora abre um novo capitulo.
+                A Madagi Atacado construiu base. Agora abre um novo capítulo.
               </h2>
               <div className="mt-5 max-w-[33rem] space-y-4 text-[1rem] leading-8 text-[rgba(58,58,58,0.78)]">
                 <p>
-                  A Madagi cresceu no atacado criando relacao, repertorio e
-                  confianca com quem vende joias no dia a dia.
+                  A Madagi cresceu no atacado criando relação, repertório e
+                  confiança com quem vende joias no dia a dia.
                 </p>
                 <p>
                   Essa live marca a virada: uma nova marca, uma nova
-                  apresentacao e uma nova forma de entrar nessa fase desde o
-                  comeco.
+                  apresentação e uma nova forma de entrar nessa fase desde o
+                  começo.
                 </p>
               </div>
             </div>
 
             <div>
               <p className="text-[0.66rem] font-semibold uppercase tracking-[0.34em] text-[rgba(53,14,9,0.46)]">
-                O que voce vai encontrar na live
+                O que você vai encontrar na live
               </p>
               <div className="mt-5 divide-y divide-[rgba(53,14,9,0.08)] border-y border-[rgba(53,14,9,0.08)]">
                 {attractives.map((item) => (

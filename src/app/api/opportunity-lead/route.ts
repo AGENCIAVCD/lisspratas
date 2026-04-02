@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
   if (!webhookUrl) {
     return NextResponse.json(
-      { error: "MAKE_WEBHOOK_URL nao configurado." },
+      { error: "MAKE_WEBHOOK_URL não configurado." },
       { status: 500 },
     );
   }
@@ -27,12 +27,12 @@ export async function POST(request: Request) {
   try {
     payload = (await request.json()) as OpportunityLeadPayload;
   } catch {
-    return NextResponse.json({ error: "Payload invalido." }, { status: 400 });
+    return NextResponse.json({ error: "Payload inválido." }, { status: 400 });
   }
 
   if (!payload.name || !payload.email || !payload.whatsapp) {
     return NextResponse.json(
-      { error: "Nome, email e WhatsApp sao obrigatorios." },
+      { error: "Nome, email e WhatsApp são obrigatórios." },
       { status: 400 },
     );
   }

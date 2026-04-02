@@ -82,7 +82,7 @@ export function RevealHeader({
       <div className="section-shell flex items-center justify-between gap-3 py-3">
         <div className="min-w-0">
           <p className="text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-[rgba(53,14,9,0.48)]">
-            Ultimas vagas para assistir ao vivo
+            Últimas vagas para assistir ao vivo
           </p>
           <div className="mt-1 flex items-center gap-2 text-[var(--coffee-900)]">
             {units.map((unit, index) => (

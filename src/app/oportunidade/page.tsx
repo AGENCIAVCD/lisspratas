@@ -11,27 +11,27 @@ import { Gift, Sparkles, Zap } from "lucide-react";
 export const metadata: Metadata = {
   title: "Oportunidade | Madagi Atacado",
   description:
-    "Uma nova fase esta chegando. Participe da live e descubra tudo em primeira mao.",
+    "Uma nova fase está chegando. Participe da live e descubra tudo em primeira mão.",
 };
 
 const benefits = [
   {
     icon: Sparkles,
-    title: "A nova marca, primeiro para voce",
+    title: "A nova marca, primeiro para você",
     description:
       "A live apresenta a nova fase antes do restante do mercado e mostra como entrar nela com mais clareza.",
   },
   {
     icon: Gift,
-    title: "Condicoes liberadas ao vivo",
+    title: "Condições liberadas ao vivo",
     description:
-      "Quem acompanhar a transmissao participa do sorteio dos kits e recebe o cupom especial liberado no momento.",
+      "Quem acompanhar a transmissão participa do sorteio dos kits e recebe o cupom especial liberado no momento.",
   },
   {
     icon: Zap,
     title: "Argumento novo para vender melhor",
     description:
-      "Voce sai da live com repertorio, apresentacao e mais seguranca para comunicar a mudanca com valor percebido.",
+      "Você sai da live com repertório, apresentação e mais segurança para comunicar a mudança com valor percebido.",
   },
 ];
 
@@ -81,9 +81,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <span className="lg:block">quer chegar primeiro.</span>
                 </h1>
                 <p className="mx-auto mt-6 max-w-[31rem] text-[1rem] leading-8 text-[rgba(58,58,58,0.76)] lg:mx-0 md:text-[1.05rem]">
-                  A Madagi Atacado esta preparando uma virada importante. Entre
-                  na live exclusiva para ver em primeira mao a mudanca, os
-                  beneficios e as condicoes reservadas para quem agir antes.
+                  A Madagi Atacado está preparando uma virada importante. Entre
+                  na live exclusiva para ver em primeira mão a mudança, os
+                  benefícios e as condições reservadas para quem agir antes.
                 </p>
                 <div className="mt-8 hidden lg:block">
                   <PrimaryCta
@@ -140,7 +140,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           Entre na lista da live
                         </h3>
                         <p className="mt-3 text-sm leading-7 text-[rgba(58,58,58,0.68)]">
-                          Preencha para receber a comunicacao e entrar antes da
+                          Preencha para receber a comunicação e entrar antes da
                           abertura geral.
                         </p>
                         <OportunidadeForm />
@@ -212,10 +212,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,244,239,0),rgba(199,199,199,0.12),rgba(248,244,239,0))]" />
           <Reveal className="relative z-10 mx-auto max-w-2xl text-center">
             <h2 className="display-copy text-[2.6rem] text-[var(--coffee-900)] sm:text-[3.8rem]">
-              Nao fique de fora dessa transformacao
+              Não fique de fora dessa transformação
             </h2>
             <p className="mt-6 text-[1rem] leading-8 text-[rgba(58,58,58,0.74)]">
-              O acesso a live e as condicoes especiais serao liberados para quem
+              O acesso à live e as condições especiais serão liberados para quem
               estiver dentro no momento certo. Quem deixar para depois pode ficar
               sem essa vantagem.
             </p>

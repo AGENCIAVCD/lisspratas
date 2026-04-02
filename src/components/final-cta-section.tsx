@@ -5,7 +5,7 @@ import { eventDateLabel, finalInfo } from "@/lib/site-data";
 
 export function FinalCtaSection() {
   return (
-    <section id="inscricao" className="section-light relative py-24 sm:py-28">
+    <section id="inscrição" className="section-light relative py-24 sm:py-28">
       <div className="section-shell grid gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
         <Reveal className="max-w-lg">
           <span className="eyebrow">Informações importantes</span>
