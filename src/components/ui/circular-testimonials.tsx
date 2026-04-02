@@ -2,6 +2,7 @@
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ImageRevealOverlay } from "@/components/image-reveal-overlay";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -195,9 +196,10 @@ export function CircularTestimonials({
                 alt={testimonial.name}
                 fill
                 sizes="(max-width: 1024px) 100vw, 46vw"
-                className="object-cover object-center"
+                className="scale-110 object-cover object-center blur-[18px]"
                 priority={index === activeIndex}
               />
+              <ImageRevealOverlay />
             </motion.div>
           ))}
         </div>

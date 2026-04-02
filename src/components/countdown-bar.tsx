@@ -2,7 +2,6 @@
 
 import { BrandMark } from "@/components/brand-mark";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import {
   countdownTarget,
   eventDateLabel,
@@ -76,19 +75,7 @@ export function CountdownBar() {
         <div className="flex flex-col gap-3 lg:grid lg:grid-cols-[auto_1fr_auto] lg:items-center lg:gap-8">
           <div className="flex items-center justify-between gap-4 lg:justify-start">
             <a href="#topo" className="flex items-center gap-4">
-              <span className="block lg:hidden">
-                <Image
-                  src="/brand/favicon-source.png"
-                  alt="Símbolo da marca"
-                  width={34}
-                  height={34}
-                  className="h-[2.125rem] w-[2.125rem]"
-                  priority
-                />
-              </span>
-              <span className="hidden lg:block">
-                <BrandMark size="header" variant="negative" />
-              </span>
+              <BrandMark size="header" variant="negative" />
               <div className="hidden h-11 w-px bg-white/10 lg:block" />
               <div className="hidden lg:block">
                 <p className="text-[0.54rem] font-semibold uppercase tracking-[0.3em] text-white/42">

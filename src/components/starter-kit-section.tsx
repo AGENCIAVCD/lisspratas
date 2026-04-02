@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ImageRevealOverlay } from "@/components/image-reveal-overlay";
 import { PrimaryCta } from "@/components/primary-cta";
 import { Reveal } from "@/components/reveal";
 import { experienceColumns, starterKitPoints } from "@/lib/site-data";
@@ -61,18 +62,20 @@ export function StarterKitSection() {
                 src="/manual/app-22.png"
                 alt="Tag e cartão da LISS"
                 fill
-                className="object-cover object-center"
+                className="scale-110 object-cover object-center blur-[18px]"
                 sizes="(max-width: 1024px) 100vw, 34vw"
               />
+              <ImageRevealOverlay compact />
             </div>
             <div className="absolute bottom-0 right-[4%] h-[320px] w-[58%] overflow-hidden rounded-[2.2rem] border border-[rgba(199,199,199,0.44)] shadow-[0_22px_40px_rgba(58,58,58,0.12)]">
               <Image
                 src="/manual/app-23.png"
                 alt="Joia e embalagem da LISS"
                 fill
-                className="object-cover object-center"
+                className="scale-110 object-cover object-center blur-[18px]"
                 sizes="(max-width: 1024px) 100vw, 28vw"
               />
+              <ImageRevealOverlay />
             </div>
           </div>
         </Reveal>

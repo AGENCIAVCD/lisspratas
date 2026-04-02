@@ -131,7 +131,7 @@ button {
   }
 
   .brand-mark--header {
-    width: 7.4rem;
+    width: auto;
   }
 
   .brand-mark--hero {
@@ -140,5 +140,26 @@ button {
 
   .brand-mark--footer {
     width: 11rem;
+  }
+
+  .brand-wordmark {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-family: var(--font-body), sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1;
+  }
+
+  .brand-wordmark__line {
+    display: block;
+    white-space: nowrap;
+    font-size: 0.7rem;
+  }
+
+  .brand-wordmark__line--sub {
+    font-size: 0.56rem;
+    letter-spacing: 0.34em;
   }
 }

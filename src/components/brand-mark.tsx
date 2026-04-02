@@ -17,6 +17,31 @@ export function BrandMark({
   variant = "positive",
   className = "",
 }: BrandMarkProps) {
+  if (size === "header") {
+    const toneClass =
+      variant === "negative"
+        ? "text-white"
+        : "text-[var(--coffee-900)]";
+
+    const accentClass =
+      variant === "negative"
+        ? "text-white/68"
+        : "text-[rgba(53,14,9,0.64)]";
+
+    return (
+      <div
+        className={`brand-mark brand-mark--${size} ${toneClass} ${className}`.trim()}
+      >
+        <div className="brand-wordmark">
+          <span className="brand-wordmark__line">MADAGI PRATAS</span>
+          <span className={`brand-wordmark__line brand-wordmark__line--sub ${accentClass}`.trim()}>
+            ATACADO
+          </span>
+        </div>
+      </div>
+    );
+  }
+
   const asset =
     variant === "negative"
       ? "/brand/logo-negative.png"

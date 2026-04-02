@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BrandMark } from "@/components/brand-mark";
+import { ImageRevealOverlay } from "@/components/image-reveal-overlay";
 import { PrimaryCta } from "@/components/primary-cta";
 import { Reveal } from "@/components/reveal";
 import { eventDateLabel } from "@/lib/site-data";
@@ -56,9 +57,10 @@ export function HeroSection() {
                 src="/manual/app-24.png"
                 alt="Aplicação de papelaria da LISS"
                 fill
-                className="object-cover object-center"
+                className="scale-110 object-cover object-center blur-[16px]"
                 sizes="180px"
               />
+              <ImageRevealOverlay compact />
             </div>
           </div>
 
@@ -70,18 +72,20 @@ export function HeroSection() {
                 alt="Embalagem premium da LISS com joias"
                 fill
                 priority
-                className="object-cover object-center"
+                className="scale-110 object-cover object-center blur-[18px]"
                 sizes="(max-width: 1024px) 100vw, 52vw"
               />
+              <ImageRevealOverlay />
             </div>
             <div className="absolute right-[2%] top-[18%] z-30 hidden h-[280px] w-[148px] lg:block">
               <Image
                 src="/manual/app-25.png"
                 alt="Pouch e caixa da LISS"
                 fill
-                className="object-contain object-center"
+                className="scale-110 object-contain object-center blur-[16px]"
                 sizes="148px"
               />
+              <ImageRevealOverlay compact />
             </div>
           </div>
         </Reveal>
