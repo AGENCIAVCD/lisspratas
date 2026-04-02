@@ -36,7 +36,7 @@ export default function OportunidadePage() {
   return (
     <main className="overflow-x-hidden bg-[linear-gradient(180deg,#f8f4ef_0%,#fefcf9_60%,#f8f3ee_100%)] text-[var(--foreground)]">
       <header className="fixed inset-x-0 top-0 z-50 flex justify-center border-b border-[rgba(53,14,9,0.08)] bg-[rgba(248,244,239,0.84)] px-6 py-5 backdrop-blur-sm">
-        <BrandMark size="hero" variant="positive" className="w-[7.4rem] sm:w-[8.5rem]" />
+        <BrandMark size="header" variant="positive" />
       </header>
 
       <section className="relative min-h-screen overflow-hidden pt-28 sm:pt-32">
