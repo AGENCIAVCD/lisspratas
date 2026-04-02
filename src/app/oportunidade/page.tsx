@@ -70,8 +70,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <BrandMark size="header" variant="positive" />
             </div>
 
-            <div className="mt-8 grid items-center gap-10 lg:min-h-[calc(100svh-13rem)] lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] lg:gap-14">
-              <Reveal className="max-w-[34rem] text-center lg:text-left" y={20}>
+            <div className="mt-8 grid items-center gap-8 lg:min-h-[calc(100svh-13rem)] lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] lg:gap-14">
+              <Reveal className="order-2 max-w-[34rem] text-center lg:order-1 lg:text-left" y={20}>
                 <p className="mb-5 text-[0.72rem] font-semibold uppercase tracking-[0.32em] text-[rgba(58,58,58,0.48)]">
                   Evento exclusivo
                 </p>
@@ -107,10 +107,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
               </Reveal>
 
-              <Reveal delay={0.12} className="flex justify-center lg:justify-end" y={24}>
+              <Reveal
+                delay={0.12}
+                className="order-1 flex justify-center lg:order-2 lg:justify-end"
+                y={24}
+              >
                 <div className="relative w-full max-w-[44rem]">
                   <div className="absolute right-[3%] top-[11%] hidden h-[74%] w-[56%] rounded-[3rem] bg-[rgba(153,125,97,0.22)] lg:block" />
-                  <div className="relative grid gap-5 md:grid-cols-[minmax(0,1fr)_minmax(16rem,0.72fr)] md:items-end">
+                  <div className="relative grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(16rem,0.72fr)] md:items-end md:gap-5">
+                    <div className="relative mx-auto w-full max-w-[15rem] md:hidden">
+                      <div className="absolute inset-0 rounded-[2rem] bg-[rgba(153,125,97,0.12)] blur-2xl" />
+                      <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/60 bg-[rgba(153,125,97,0.12)] shadow-[0_24px_60px_rgba(58,58,58,0.16)]">
+                        <Image
+                          src="/oportunidade/expert-1.jpg"
+                          alt="Especialista da Madagi Atacado"
+                          fill
+                          priority
+                          sizes="(max-width: 768px) 60vw, 420px"
+                          className="object-cover object-[center_42%]"
+                        />
+                      </div>
+                    </div>
+
                     <div
                       id="oportunidade-formulario"
                       className="opportunity-form-anchor relative z-10 mx-auto w-full max-w-[24rem] scroll-mt-40 rounded-[1.8rem] bg-white p-4 shadow-[0_28px_80px_rgba(58,58,58,0.14)] md:mx-0 md:max-w-none"
@@ -130,7 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       </div>
                     </div>
 
-                    <div className="relative mx-auto w-full max-w-[17.5rem] md:max-w-none">
+                    <div className="relative mx-auto hidden w-full max-w-[17.5rem] md:block md:max-w-none">
                       <div className="absolute inset-0 rounded-[2.2rem] bg-[rgba(153,125,97,0.12)] blur-2xl" />
                       <div className="relative aspect-[4/5] overflow-hidden rounded-[2.2rem] border border-white/60 bg-[rgba(153,125,97,0.12)] shadow-[0_30px_80px_rgba(58,58,58,0.18)]">
                         <Image
