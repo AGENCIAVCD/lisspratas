@@ -1,12 +1,14 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { registrationUrl } from "@/lib/site-data";
+import { useRouter } from "next/navigation";
 
 export function OportunidadeForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const router = useRouter();
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const form = event.currentTarget;
@@ -16,7 +18,43 @@ export function OportunidadeForm() {
     }
 
     setIsSubmitting(true);
-    window.location.href = registrationUrl;
+    setErrorMessage("");
+
+    const formData = new FormData(form);
+    const url = new URL(window.location.href);
+
+    const payload = {
+      name: String(formData.get("name") ?? "").trim(),
+      email: String(formData.get("email") ?? "").trim(),
+      whatsapp: String(formData.get("whatsapp") ?? "").trim(),
+      utm_source: url.searchParams.get("utm_source") ?? "",
+      utm_medium: url.searchParams.get("utm_medium") ?? "",
+      utm_campaign: url.searchParams.get("utm_campaign") ?? "",
+      utm_content: url.searchParams.get("utm_content") ?? "",
+      utm_term: url.searchParams.get("utm_term") ?? "",
+      landing_page: `${url.origin}${url.pathname}`,
+    };
+
+    try {
+      const response = await fetch("/api/opportunity-lead", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Falha ao enviar o cadastro.");
+      }
+
+      router.push("/obrigado");
+    } catch {
+      setErrorMessage(
+        "Nao foi possivel concluir seu cadastro agora. Tente novamente em instantes.",
+      );
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -68,8 +106,14 @@ export function OportunidadeForm() {
         disabled={isSubmitting}
         className="mt-2 inline-flex w-full items-center justify-center rounded-[1rem] bg-[linear-gradient(135deg,#350e09,#3a3a3a)] px-5 py-3.5 text-[0.76rem] font-semibold uppercase tracking-[0.22em] text-white shadow-[0_18px_36px_rgba(53,14,9,0.16)] hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-80"
       >
-        {isSubmitting ? "Redirecionando..." : "Quero garantir meu lugar"}
+        {isSubmitting ? "Enviando..." : "Quero garantir meu lugar"}
       </button>
+
+      {errorMessage ? (
+        <p className="text-sm leading-6 text-[rgba(140,44,31,0.9)]">
+          {errorMessage}
+        </p>
+      ) : null}
     </form>
   );
 }
