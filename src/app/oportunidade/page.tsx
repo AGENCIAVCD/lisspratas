@@ -71,22 +71,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             <div className="mt-8 grid items-center gap-8 lg:min-h-[calc(100svh-13rem)] lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] lg:gap-14">
-              <Reveal className="order-2 max-w-[34rem] text-center lg:order-1 lg:text-left" y={20}>
+              <Reveal className="order-1 max-w-[34rem] text-center lg:order-1 lg:text-left" y={20}>
                 <p className="mb-5 text-[0.72rem] font-semibold uppercase tracking-[0.32em] text-[rgba(58,58,58,0.48)]">
                   Evento exclusivo
                 </p>
-                <h1 className="display-copy max-w-[10.5ch] text-[3.05rem] leading-[0.92] text-[var(--coffee-900)] sm:max-w-[11.2ch] sm:text-[4rem] lg:max-w-none lg:text-[4.45rem]">
+                <h1 className="display-copy mx-auto max-w-[12.2ch] text-center text-[2.75rem] leading-[0.94] text-[var(--coffee-900)] sm:max-w-[13ch] sm:text-[4rem] lg:mx-0 lg:max-w-none lg:text-left lg:text-[4.45rem]">
                   <span className="lg:block">Uma nova fase</span>{" "}
-                  <span className="lg:block">pensada para</span>{" "}
-                  <span className="lg:block">quem quer chegar</span>{" "}
-                  <span className="lg:block">primeiro.</span>
+                  <span className="lg:block">pensada para quem</span>{" "}
+                  <span className="lg:block">quer chegar primeiro.</span>
                 </h1>
                 <p className="mx-auto mt-6 max-w-[31rem] text-[1rem] leading-8 text-[rgba(58,58,58,0.76)] lg:mx-0 md:text-[1.05rem]">
                   A Madagi Atacado esta preparando uma virada importante. Entre
                   na live exclusiva para ver em primeira mao a mudanca, os
                   beneficios e as condicoes reservadas para quem agir antes.
                 </p>
-                <div className="mt-8">
+                <div className="mt-8 hidden lg:block">
                   <PrimaryCta
                     label="Quero participar da live"
                     href="#oportunidade-formulario"
@@ -94,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     className="mx-auto lg:mx-0"
                   />
                 </div>
-                <div className="mt-5 flex flex-wrap justify-center gap-3 lg:justify-start">
+                <div className="mt-5 hidden flex-wrap justify-center gap-3 lg:flex lg:justify-start">
                   <span className="rounded-full border border-[rgba(53,14,9,0.1)] bg-white/70 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[rgba(53,14,9,0.56)]">
                     Ao vivo
                   </span>
@@ -109,7 +108,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
               <Reveal
                 delay={0.12}
-                className="order-1 flex justify-center lg:order-2 lg:justify-end"
+                className="order-2 flex justify-center lg:order-2 lg:justify-end"
                 y={24}
               >
                 <div className="relative w-full max-w-[44rem]">
