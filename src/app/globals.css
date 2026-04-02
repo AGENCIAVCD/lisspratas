@@ -145,11 +145,13 @@ button {
   .brand-wordmark {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    align-items: center;
+    gap: 0.02rem;
     font-family: var(--font-body), sans-serif;
     font-weight: 700;
     letter-spacing: 0.16em;
     line-height: 1;
+    text-align: center;
   }
 
   .brand-wordmark__line {
@@ -161,6 +163,7 @@ button {
   .brand-wordmark__line--sub {
     font-size: 0.56rem;
     letter-spacing: 0.34em;
+    padding-left: 0.34em;
   }
 }
 

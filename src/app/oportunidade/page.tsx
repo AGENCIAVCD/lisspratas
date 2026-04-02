@@ -65,12 +65,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,244,239,0.88),rgba(248,244,239,0.68),#f8f4ef)]" />
           </div>
 
-          <div className="section-shell relative z-10 py-10 sm:py-12 lg:py-14">
+          <div className="section-shell relative z-10 py-8 sm:py-10 lg:py-12">
             <div className="flex justify-center">
               <BrandMark size="header" variant="positive" />
             </div>
 
-            <div className="mt-10 grid items-center gap-10 lg:min-h-[calc(100svh-13rem)] lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] lg:gap-14">
+            <div className="mt-8 grid items-center gap-10 lg:min-h-[calc(100svh-13rem)] lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] lg:gap-14">
               <Reveal className="max-w-[34rem] text-center lg:text-left" y={20}>
                 <p className="mb-5 text-[0.72rem] font-semibold uppercase tracking-[0.32em] text-[rgba(58,58,58,0.48)]">
                   Evento exclusivo
