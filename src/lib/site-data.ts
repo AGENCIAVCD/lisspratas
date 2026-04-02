@@ -2,7 +2,7 @@ export const countdownTarget = "2026-04-16T00:00:00-03:00";
 export const eventDateLabel = "16 de abril de 2026";
 export const registrationUrl = "https://example.com/live-nova-marca";
 export const vipGroupUrl =
-  "https://chat.whatsapp.com/IuYaJf7WnpqJxF4GeZerCJ?mode=gi_t";
+  "https://chat.whatsapp.com/IuYaJf7WnpqJxF4GeZerCJ";
 
 export const navigationLinks = [
   { label: "Nova fase", href: "#historia" },

@@ -47,7 +47,7 @@ export function OportunidadeForm() {
         throw new Error("Falha ao enviar o cadastro.");
       }
 
-      window.location.replace(vipGroupUrl);
+      window.location.href = vipGroupUrl;
     } catch {
       setErrorMessage(
         "Nao foi possivel concluir seu cadastro agora. Tente novamente em instantes.",
