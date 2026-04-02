@@ -11,7 +11,7 @@ import { StorySection } from "@/components/story-section";
 export const metadata: Metadata = {
   title: "LISS | Live de relançamento",
   description:
-    "Participe da estreia da LISS em 16 de abril de 2026. Conheça a nova fase do atacado, concorra a 10 Starter Kits e desbloqueie 20% OFF ao vivo.",
+    "Participe da estreia da LISS em 16 de abril de 2026. Conheça a nova fase do atacado, concorra a 10 Starter Kits e desbloqueie 20% OFF durante a live.",
 };
 
 export default function Home() {

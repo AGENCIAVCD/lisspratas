@@ -11,48 +11,48 @@ export const navigationLinks = [
 
 export const manifestoPoints = [
   {
-    title: "O atacado segue forte. Agora com mais força para vender.",
+    title: "O atacado continua forte. Agora, com mais força para vender.",
     description:
-      "A LISS chega para ajudar você a vender com mais confiança, mais desejo e mais percepção de valor em cada atendimento.",
+      "A LISS chega para ajudar você a vender com mais confiança, mais desejo e mais valor percebido em cada atendimento.",
   },
   {
-    title: "Quem assistir à estreia entra na nova fase antes.",
+    title: "Quem assistir à estreia entra primeiro nessa nova fase.",
     description:
-      "Na live, você entende a novidade em primeira mão, conhece os benefícios desse começo e sai com mais segurança para aproveitar a oportunidade.",
+      "Na live, você conhece a novidade em primeira mão, entende os benefícios desse início e sai com mais segurança para aproveitar a oportunidade.",
   },
 ];
 
 export const transitionParagraphs = [
   "A Madagi Pratas Atacado nasceu da parceria entre dois irmãos. Com a separação dos caminhos, o varejo seguiu sua própria trajetória e o atacado abriu um novo capítulo.",
-  "Esse novo capítulo agora tem nome: LISS. Em 16 de abril de 2026, essa estreia acontece ao vivo para revendedoras, lojistas e empreendedoras que querem chegar cedo e aproveitar melhor essa nova fase.",
+  "Esse novo capítulo agora tem nome: LISS. Em 16 de abril de 2026, essa estreia acontece ao vivo para revendedoras, lojistas e empreendedoras que querem chegar cedo e aproveitar da melhor forma essa nova fase.",
 ];
 
 export const audienceItems = [
   "Já vende ou quer vender prata, mas precisa de uma marca com apresentação mais forte.",
-  "Quer começar no atacado com peças que despertem desejo logo no primeiro contato.",
-  "Precisa de mais percepção de valor para vender melhor no WhatsApp, no Instagram e no atendimento direto.",
+  "Quer começar no atacado com peças que despertem desejo já no primeiro contato.",
+  "Precisa aumentar o valor percebido para vender melhor no WhatsApp, no Instagram e no atendimento direto.",
   "Busca uma oportunidade real para entrar com mais segurança e menos improviso.",
   "Quer acessar benefícios liberados apenas para quem estiver ao vivo na estreia.",
-  "Entende que chegar cedo em uma nova fase pode abrir espaço antes da concorrência.",
+  "Entende que chegar cedo a uma nova fase pode abrir espaço antes da concorrência.",
 ];
 
 export const experienceColumns = [
   {
     eyebrow: "O que você destrava",
-    title: "Ao entrar na live, você sai com motivo real para agir",
+    title: "Ao entrar na live, você sai com motivos concretos para agir",
     items: [
       "Participa do sorteio de 10 Starter Kits prontos para começar a vender.",
-      "Descobre ao vivo o cupom de 20% OFF para aproveitar a nova fase com vantagem.",
-      "Descobre como vender a LISS com mais desejo e mais valor percebido.",
-      "Vê como essa nova fase pode te ajudar a começar com mais força desde o primeiro contato.",
+      "Descobre ao vivo o cupom de 20% OFF para aproveitar essa nova fase com vantagem.",
+      "Entende como vender a LISS com mais desejo e mais valor percebido.",
+      "Vê como essa nova fase pode ajudar você a começar com mais força desde o primeiro contato.",
     ],
   },
   {
     eyebrow: "Por que agora",
     title: "Quem chega no começo aproveita a melhor janela",
     items: [
-      "Conhece essa nova fase antes do mercado absorver essa mudança.",
-      "Entra com argumento novo para conversar com clientes e revendedoras.",
+      "Conhece essa nova fase antes de o mercado absorver essa mudança.",
+      "Passa a ter um argumento novo para conversar com clientes e revendedoras.",
       "Aproveita benefícios exclusivos liberados durante a transmissão.",
       "Se posiciona cedo em uma marca que nasce com apelo comercial mais forte.",
     ],
@@ -61,20 +61,20 @@ export const experienceColumns = [
 
 export const starterKitPoints = [
   "Um começo mais rápido para montar vitrine, catálogo e oferta.",
-  "Peças e apresentação pensadas para gerar desejo logo no primeiro contato.",
-  "Material ideal para vender no digital e acelerar as primeiras conversões.",
+  "Peças e apresentação pensadas para gerar desejo já no primeiro contato.",
+  "Material ideal para vender no digital e acelerar suas primeiras conversões.",
 ];
 
 export const authorityPoints = [
   {
     title: "Mais confiança na hora de apresentar e vender",
     description:
-      "Quem entra na live entende por que essa nova fase transmite mais segurança para vender melhor.",
+      "Quem entra na live entende por que essa nova fase transmite mais segurança para apresentar e vender.",
   },
   {
     title: "Embalagem que sustenta valor percebido",
     description:
-      "Caixa, pouch e tag entregam uma experiência mais premium e ajudam você a defender melhor o preço.",
+      "Caixa, pouch e tag entregam uma experiência mais premium e ajudam você a sustentar melhor o preço.",
   },
   {
     title: "Visual pronto para catálogo, stories e atendimento",
@@ -84,7 +84,7 @@ export const authorityPoints = [
   {
     title: "Relançamento com benefício prático",
     description:
-      "Além da estreia, a live entrega sorteio, condição especial e motivo real para agir no mesmo dia.",
+      "Além da estreia, a live entrega sorteio, condição especial e um motivo real para agir no mesmo dia.",
   },
 ];
 
@@ -93,14 +93,14 @@ export const visualShowcaseSlides = [
     name: "A estreia que prende o olhar.",
     designation: "Imagem forte desde o primeiro contato",
     quote:
-      "Na live, você vai ver como a nova fase da LISS já nasce com apresentação forte para chamar atenção, gerar desejo e fazer o produto parecer ainda mais valioso.",
+      "Na live, você vai ver como a nova fase da LISS já nasce com uma apresentação forte para chamar atenção, gerar desejo e valorizar ainda mais o produto.",
     src: "/manual/app-21.png",
   },
   {
     name: "Embalagem que valoriza a venda.",
     designation: "Experiência mais premium ao receber",
     quote:
-      "Caixa, pouch e acabamento ajudam a sustentar uma percepção mais refinada, facilitando a venda e deixando a entrega muito mais memorável para a cliente.",
+      "Caixa, pouch e acabamento ajudam a sustentar uma percepção mais refinada, facilitam a venda e deixam a entrega muito mais memorável para a cliente.",
     src: "/manual/app-25.png",
   },
   {
@@ -114,7 +114,7 @@ export const visualShowcaseSlides = [
     name: "Uma nova fase feita para vender melhor.",
     designation: "Desejo, clareza e oportunidade",
     quote:
-      "A proposta da estreia é simples: mostrar por que entrar cedo nessa fase da LISS pode dar mais vantagem, mais clareza e mais força para começar ou acelerar as vendas.",
+      "A proposta da estreia é simples: mostrar por que entrar cedo nessa fase da LISS pode trazer mais vantagem, mais clareza e mais força para começar ou acelerar as vendas.",
     src: "/manual/app-23.png",
   },
 ];
@@ -123,7 +123,7 @@ export const finalInfo = [
   "Transmissão ao vivo em 16 de abril de 2026.",
   "Sorteio de 10 Starter Kits para quem acompanhar a live.",
   "Cupom de 20% OFF revelado somente durante a transmissão.",
-  "Ideal para revendedoras, lojistas e quem quer começar a vender com mais segurança.",
+  "Ideal para revendedoras, lojistas e para quem quer começar a vender com mais segurança.",
 ];
 
 export const footerLinks = [

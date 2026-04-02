@@ -26,7 +26,7 @@ export function BenefitsSection() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">Essa live foi feita para quem quer vender melhor</span>
           <h2 className="display-copy mt-7 text-[3.1rem] text-[var(--coffee-900)] sm:text-[4.2rem]">
-            Se você quer revender com mais desejo, mais confiança e mais vantagem, seu lugar é aqui.
+            Se você quer revender com mais desejo, mais confiança e mais vantagem, esse é o seu lugar.
           </h2>
         </Reveal>
 

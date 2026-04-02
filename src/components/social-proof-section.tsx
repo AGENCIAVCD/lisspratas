@@ -11,7 +11,7 @@ export function SocialProofSection() {
           <h2 className="display-copy mt-7 text-[3rem] text-[var(--coffee-900)] sm:text-[4rem]">
             Quando a marca transmite mais valor, vender fica mais fácil.
           </h2>
-          <p className="body-copy mt-6 max-w-[42rem] mx-auto">
+          <p className="body-copy mx-auto mt-6 max-w-[42rem]">
             Na live, você vai entender por que essa nova fase ajuda a chamar
             mais atenção, despertar mais desejo e vender com mais segurança.
           </p>

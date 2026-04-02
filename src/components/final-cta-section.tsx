@@ -10,7 +10,7 @@ export function FinalCtaSection() {
         <Reveal className="max-w-lg">
           <span className="eyebrow">Informações importantes</span>
           <h2 className="mt-7 text-[2.7rem] leading-[1.02] text-[var(--coffee-900)] sm:text-[3.7rem]">
-            Entre na live com tudo claro antes da estreia começar.
+            Entre na live com tudo claro antes de a estreia começar.
           </h2>
           <div className="mt-8 space-y-4">
             {finalInfo.map((item) => (
@@ -34,16 +34,17 @@ export function FinalCtaSection() {
             <div className="note-line mt-8 max-w-[28rem]" />
             <div className="mt-8 max-w-[34rem] space-y-5 text-[1.1rem] leading-9 text-[rgba(58,58,58,0.82)]">
               <p>
-                No atacado, quem chega cedo entende a novidade primeiro, usa a
-                melhor condição e começa a vender com mais argumento.
+                No atacado, quem chega cedo entende a novidade primeiro,
+                aproveita a melhor condição e começa a vender com mais
+                argumento.
               </p>
               <p>
                 A live da LISS é o momento em que você conhece essa nova fase
-                antes, concorre aos kits e libera o cupom ao vivo.
+                em primeira mão, concorre aos kits e libera o cupom ao vivo.
               </p>
               <p className="font-semibold text-[var(--coffee-900)]">
-                Se faz sentido vender com mais força, essa live faz sentido
-                para você.
+                Se vender com mais força faz sentido para você, essa live
+                também faz.
               </p>
             </div>
             <div className="mt-10">

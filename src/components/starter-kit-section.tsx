@@ -37,7 +37,7 @@ export function StarterKitSection() {
           <div className="soft-panel rounded-[2.4rem] bg-[rgba(255,255,255,0.96)] p-8 sm:p-10">
             <span className="eyebrow">Starter Kit</span>
             <h3 className="mt-6 text-[2.5rem] leading-[1.02] text-[var(--coffee-900)] sm:text-[3.3rem]">
-              Os Starter Kits foram pensados para quem quer começar vendendo, não apenas assistindo.
+              Os Starter Kits foram pensados para quem quer começar vendendo, e não apenas assistindo.
             </h3>
             <div className="mt-7 space-y-4">
               {starterKitPoints.map((item) => (

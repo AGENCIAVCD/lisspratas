@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div>
           <BrandMark size="footer" variant="positive" />
           <p className="mt-3 max-w-lg text-sm leading-7 text-[rgba(58,58,58,0.62)]">
-            Acompanhe a estreia da LISS ao vivo e aproveite a nova fase com
+            Acompanhe a estreia da LISS ao vivo e aproveite essa nova fase com
             mais vantagem para vender.
           </p>
         </div>

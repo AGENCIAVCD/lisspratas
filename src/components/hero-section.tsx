@@ -22,11 +22,11 @@ export function HeroSection() {
             <BrandMark size="hero" variant="positive" />
           </div>
           <h1 className="display-copy mt-6 max-w-[16ch] text-[2.32rem] leading-[0.94] text-[var(--coffee-900)] sm:max-w-[14ch] sm:text-[3.4rem] lg:max-w-[13ch] lg:text-[4.35rem]">
-            A nova fase da LISS estreia ao vivo para quem quer vender primeiro.
+            A nova fase da LISS estreia ao vivo para quem quer sair na frente.
           </h1>
           <p className="body-copy mt-6 max-w-[34rem]">
-            A Madagi Pratas Atacado entra em uma nova fase. E quem estiver na
-            live vai entender primeiro a novidade, liberar benefícios
+            A Madagi Pratas Atacado entra em uma nova fase. Quem estiver na
+            live vai conhecer primeiro essa novidade, liberar benefícios
             exclusivos e sair com mais clareza para começar ou vender melhor.
           </p>
 
