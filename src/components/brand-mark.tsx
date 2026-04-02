@@ -33,7 +33,7 @@ export function BrandMark({
         className={`brand-mark brand-mark--${size} ${toneClass} ${className}`.trim()}
       >
         <div className="brand-wordmark">
-          <span className="brand-wordmark__line">MADAGI PRATAS</span>
+          <span className="brand-wordmark__line">MADAGI</span>
           <span className={`brand-wordmark__line brand-wordmark__line--sub ${accentClass}`.trim()}>
             ATACADO
           </span>

@@ -26,7 +26,7 @@ export function HeroSection() {
             A nova marca será apresentada ao vivo para quem quer sair na frente.
           </h1>
           <p className="body-copy mt-6 max-w-[34rem]">
-            A Madagi Pratas Atacado entra em uma nova fase. Quem estiver na
+            A Madagi Atacado entra em uma nova fase. Quem estiver na
             live vai conhecer primeiro essa novidade, liberar benefícios
             exclusivos e sair com mais clareza para começar ou vender melhor.
           </p>

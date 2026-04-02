@@ -6,7 +6,7 @@ import { OportunidadeForm } from "@/components/oportunidade-form";
 import { PrimaryCta } from "@/components/primary-cta";
 import { Reveal } from "@/components/reveal";
 import { RevealHeader } from "@/components/reveal-header";
-import { Gift, Sparkles, Zap } from "lucide-react";
+import { BadgePercent, Clock3, EyeOff } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Oportunidade | Madagi Atacado",
@@ -16,22 +16,22 @@ export const metadata: Metadata = {
 
 const benefits = [
   {
-    icon: Sparkles,
-    title: "A nova marca, primeiro para você",
+    icon: EyeOff,
+    title: "Um Segredo Será Revelado",
     description:
-      "A live apresenta a nova fase antes do restante do mercado e mostra como entrar nela com mais clareza.",
+      "Algo grande está sendo preparado... e ninguém sabe ainda. A verdade só será revelada ao vivo, para quem estiver presente.",
   },
   {
-    icon: Gift,
-    title: "Condições liberadas ao vivo",
+    icon: BadgePercent,
+    title: "Condições Exclusivas",
     description:
-      "Quem acompanhar a transmissão participa do sorteio dos kits e recebe o cupom especial liberado no momento.",
+      "Durante a live, cupons promocionais com descontos especiais serão liberados exclusivamente para quem estiver assistindo.",
   },
   {
-    icon: Zap,
-    title: "Argumento novo para vender melhor",
+    icon: Clock3,
+    title: "Acesso Antecipado",
     description:
-      "Você sai da live com repertório, apresentação e mais segurança para comunicar a mudança com valor percebido.",
+      "Esteja entre os primeiros a descobrir o segredo e tenha a chance de garantir 1 dos 10 kits disponíveis antes que acabem.",
   },
 ];
 

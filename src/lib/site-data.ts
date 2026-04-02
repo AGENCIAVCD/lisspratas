@@ -25,7 +25,7 @@ export const manifestoPoints = [
 ];
 
 export const transitionParagraphs = [
-  "A Madagi Pratas Atacado nasceu da parceria entre dois irmãos. Com a separação dos caminhos, o varejo seguiu sua própria trajetória e o atacado abriu um novo capítulo.",
+  "A Madagi Atacado nasceu da parceria entre dois irmãos. Com a separação dos caminhos, o varejo seguiu sua própria trajetória e o atacado abriu um novo capítulo.",
   "Em 16 de abril de 2026, esse novo capítulo será apresentado ao vivo para revendedoras, lojistas e empreendedoras que querem chegar cedo e aproveitar da melhor forma essa nova fase.",
 ];
 
