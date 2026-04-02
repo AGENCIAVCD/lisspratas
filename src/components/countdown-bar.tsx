@@ -79,7 +79,7 @@ export function CountdownBar() {
               <span className="block lg:hidden">
                 <Image
                   src="/brand/favicon-source.png"
-                  alt="Monograma LISS"
+                  alt="Símbolo da marca"
                   width={34}
                   height={34}
                   className="h-[2.125rem] w-[2.125rem]"

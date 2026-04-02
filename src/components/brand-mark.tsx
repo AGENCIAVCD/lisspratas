@@ -22,7 +22,7 @@ export function BrandMark({
       ? "/brand/logo-negative.png"
       : "/brand/logo-positive.png";
 
-  const alt = variant === "negative" ? "Logo LISS Pratas negativa" : "Logo LISS Pratas";
+  const alt = variant === "negative" ? "Logo da marca" : "Logo da marca";
 
   return (
     <div className={`brand-mark brand-mark--${size} ${className}`.trim()}>
