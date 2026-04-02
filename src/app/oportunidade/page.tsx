@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { BrandMark } from "@/components/brand-mark";
-import { ImageRevealOverlay } from "@/components/image-reveal-overlay";
+import { OportunidadeForm } from "@/components/oportunidade-form";
 import { PrimaryCta } from "@/components/primary-cta";
 import { Reveal } from "@/components/reveal";
-import { RevealHeader } from "@/components/reveal-header";
 import { Gift, Sparkles, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -36,121 +34,119 @@ const benefits = [
 
 export default function OportunidadePage() {
   return (
-    <>
-      <RevealHeader />
+    <main className="overflow-x-hidden bg-[linear-gradient(180deg,#f8f4ef_0%,#fefcf9_60%,#f8f3ee_100%)] text-[var(--foreground)]">
+      <header className="fixed inset-x-0 top-0 z-50 flex justify-center border-b border-[rgba(53,14,9,0.08)] bg-[rgba(248,244,239,0.84)] px-6 py-5 backdrop-blur-sm">
+        <BrandMark size="hero" variant="positive" className="w-[7.4rem] sm:w-[8.5rem]" />
+      </header>
 
-      <main className="overflow-x-hidden bg-[linear-gradient(180deg,#f7f2ee_0%,#ffffff_45%,#f6f1ec_100%)] text-[var(--foreground)]">
-        <header className="fixed inset-x-0 top-[4.65rem] z-40 flex justify-center px-5 sm:px-8">
-          <div className="rounded-full border border-[rgba(53,14,9,0.08)] bg-[rgba(255,255,255,0.74)] px-5 py-3 backdrop-blur-xl">
-            <BrandMark size="header" variant="positive" />
-          </div>
-        </header>
+      <section className="relative min-h-screen overflow-hidden pt-28 sm:pt-32">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[url('/brand/logo-positive.png')] bg-center bg-no-repeat opacity-[0.06] blur-[2px]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,244,239,0.88),rgba(248,244,239,0.68),#f8f4ef)]" />
+        </div>
 
-        <section className="relative min-h-screen overflow-hidden pt-44 sm:pt-48">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(53,14,9,0.09),transparent_34%)]" />
-          <div className="absolute left-1/2 top-24 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full border border-[rgba(53,14,9,0.05)]" />
+        <div className="section-shell relative z-10 grid items-center gap-12 py-16 md:min-h-[calc(100svh-7rem)] md:grid-cols-2">
+          <Reveal className="order-2 text-center md:order-1 md:text-left">
+            <p className="mb-4 text-[0.74rem] font-semibold uppercase tracking-[0.3em] text-[rgba(58,58,58,0.5)]">
+              Evento exclusivo
+            </p>
+            <h1 className="display-copy text-[3rem] leading-[1.02] text-[var(--coffee-900)] sm:text-[4.3rem] lg:text-[5rem]">
+              Uma nova era
+              <br />
+              <span className="font-semibold">esta chegando</span>
+            </h1>
+            <p className="mx-auto mt-6 max-w-[34rem] text-[1rem] leading-8 text-[rgba(58,58,58,0.76)] md:mx-0 md:text-[1.05rem]">
+              A Madagi Atacado esta preparando uma nova fase. Participe da live
+              exclusiva e descubra em primeira mao a mudanca, os beneficios e
+              as condicoes especiais reservadas para quem entrar cedo.
+            </p>
+            <div className="mt-8 flex justify-center md:justify-start">
+              <PrimaryCta label="Quero participar da live" />
+            </div>
+            <p className="mt-4 text-xs tracking-[0.08em] text-[rgba(58,58,58,0.54)]">
+              Vagas limitadas • acesso gratuito
+            </p>
+          </Reveal>
 
-          <div className="section-shell relative z-10 grid min-h-[calc(100svh-11rem)] items-center gap-12 py-10 lg:grid-cols-[0.92fr_1.08fr]">
-            <Reveal className="max-w-xl text-center lg:text-left">
-              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-[rgba(53,14,9,0.46)]">
-                Live exclusiva
-              </p>
-              <h1 className="display-copy mt-5 text-[3rem] leading-[0.9] text-[var(--coffee-900)] sm:text-[4.6rem] lg:max-w-[10ch]">
-                Uma nova era esta chegando para quem quer vender primeiro.
-              </h1>
-              <p className="mt-5 max-w-[34rem] text-[1.02rem] leading-8 text-[rgba(58,58,58,0.76)]">
-                A Madagi Atacado entra em um novo capitulo. Nesta live, voce
-                entende a mudanca em primeira mao, acessa condicoes especiais e
-                sai pronta para aproveitar a melhor janela.
-              </p>
-
-              <div className="mt-8 flex justify-center lg:justify-start">
-                <PrimaryCta label="Quero entrar na live" />
-              </div>
-
-              <p className="mt-4 text-[0.75rem] font-semibold uppercase tracking-[0.24em] text-[rgba(53,14,9,0.46)]">
-                Ao vivo • vagas limitadas • beneficios liberados durante a transmissao
-              </p>
-            </Reveal>
-
-            <Reveal delay={0.1} className="relative min-h-[24rem] sm:min-h-[32rem]">
-              <div className="absolute inset-x-[8%] top-[8%] h-[74%] rounded-[2.6rem] bg-[rgba(53,14,9,0.06)]" />
-              <div className="absolute left-[2%] top-[18%] hidden h-[13rem] w-[10rem] overflow-hidden rounded-[2rem] border border-[rgba(53,14,9,0.08)] bg-white/70 p-2 backdrop-blur-sm md:block">
-                <div className="relative h-full w-full overflow-hidden rounded-[1.4rem]">
-                  <Image
-                    src="/manual/app-24.png"
-                    alt="Aplicacao teaser"
-                    fill
-                    sizes="160px"
-                    className="scale-110 object-cover object-center blur-[18px]"
-                  />
-                  <ImageRevealOverlay compact />
+          <Reveal delay={0.15} className="order-1 flex justify-center md:order-2">
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-[2rem] bg-[radial-gradient(circle,rgba(199,199,199,0.28),transparent_68%)] blur-2xl" />
+              <div className="relative w-[20rem] rounded-[1.6rem] bg-white p-5 shadow-[0_30px_80px_rgba(58,58,58,0.16)] sm:w-[24rem] sm:p-6">
+                <div className="rounded-[1.35rem] border border-[rgba(53,14,9,0.08)] bg-[linear-gradient(180deg,rgba(248,244,239,0.82),rgba(255,255,255,0.98))] p-5 sm:p-6">
+                  <p className="text-[0.66rem] font-semibold uppercase tracking-[0.3em] text-[rgba(58,58,58,0.46)]">
+                    Garanta seu acesso
+                  </p>
+                  <h3 className="mt-3 text-[1.8rem] leading-[1.02] text-[var(--coffee-900)]">
+                    Entre na lista da live
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-[rgba(58,58,58,0.68)]">
+                    Preencha abaixo para receber a comunicacao e entrar antes
+                    da abertura geral.
+                  </p>
+                  <OportunidadeForm />
                 </div>
               </div>
-              <div className="absolute bottom-0 right-[2%] h-[82%] w-[84%] overflow-hidden rounded-[2.7rem] border border-[rgba(53,14,9,0.08)] bg-white p-3 shadow-[0_30px_80px_rgba(58,58,58,0.12)]">
-                <div className="relative h-full w-full overflow-hidden rounded-[2rem]">
-                  <Image
-                    src="/manual/app-21.png"
-                    alt="Imagem teaser da oportunidade"
-                    fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 52vw"
-                    className="scale-110 object-cover object-center blur-[20px]"
-                  />
-                  <ImageRevealOverlay />
-                </div>
-              </div>
-            </Reveal>
-          </div>
-        </section>
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
-        <section className="section-shell py-20 sm:py-24">
-          <Reveal className="mx-auto max-w-3xl text-center">
-            <p className="text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-[rgba(53,14,9,0.46)]">
+      <section className="bg-[rgba(199,199,199,0.12)] px-6 py-24">
+        <div className="mx-auto max-w-5xl text-center">
+          <Reveal>
+            <p className="mb-3 text-xs uppercase tracking-[0.3em] text-[rgba(58,58,58,0.5)]">
               O que te espera
             </p>
-            <h2 className="display-copy mt-5 text-[2.6rem] text-[var(--coffee-900)] sm:text-[4rem]">
-              Por que essa oportunidade pode mudar sua largada.
+            <h2 className="display-copy text-[2.5rem] text-[var(--coffee-900)] sm:text-[3.6rem]">
+              Por que entrar cedo nessa live?
             </h2>
           </Reveal>
 
-          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
             {benefits.map((benefit, index) => (
               <Reveal
                 key={benefit.title}
-                delay={index * 0.08}
-                className="rounded-[2rem] border border-[rgba(53,14,9,0.08)] bg-[rgba(255,255,255,0.72)] p-8 backdrop-blur-sm"
+                delay={index * 0.15}
+                className="rounded-xl bg-white p-8 shadow-[0_18px_40px_rgba(58,58,58,0.08)] transition-shadow hover:shadow-[0_24px_50px_rgba(58,58,58,0.12)]"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(53,14,9,0.08)] text-[var(--coffee-900)]">
+                <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[rgba(53,14,9,0.08)] text-[var(--coffee-900)]">
                   <benefit.icon className="h-5 w-5" />
                 </div>
-                <h3 className="mt-6 text-[1.55rem] leading-tight text-[var(--coffee-900)]">
+                <h3 className="text-[1.4rem] font-medium leading-tight text-[var(--coffee-900)]">
                   {benefit.title}
                 </h3>
-                <p className="mt-4 text-[0.98rem] leading-8 text-[rgba(58,58,58,0.76)]">
+                <p className="mt-3 text-sm leading-7 text-[rgba(58,58,58,0.7)]">
                   {benefit.description}
                 </p>
               </Reveal>
             ))}
           </div>
-        </section>
 
-        <section className="relative overflow-hidden py-20 sm:py-24">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(53,14,9,0.02),rgba(53,14,9,0.08))]" />
-          <Reveal className="section-shell relative z-10 text-center">
-            <h2 className="display-copy mx-auto max-w-[11ch] text-[2.6rem] text-[var(--coffee-900)] sm:text-[4rem]">
-              Entre agora e veja a revelacao antes de todo mundo.
-            </h2>
-            <p className="mx-auto mt-5 max-w-[40rem] text-[1rem] leading-8 text-[rgba(58,58,58,0.76)]">
-              O acesso e gratuito, mas os beneficios e a comunicacao da live
-              vao para quem estiver dentro no momento certo.
-            </p>
-            <div className="mt-8 flex justify-center">
-              <PrimaryCta label="Garantir minha vaga" />
-            </div>
+          <Reveal delay={0.45} className="mt-12">
+            <PrimaryCta label="Quero participar da live" />
           </Reveal>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden px-6 py-24">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,244,239,0),rgba(199,199,199,0.12),rgba(248,244,239,0))]" />
+        <Reveal className="relative z-10 mx-auto max-w-2xl text-center">
+          <h2 className="display-copy text-[2.6rem] text-[var(--coffee-900)] sm:text-[3.8rem]">
+            Nao fique de fora dessa transformacao
+          </h2>
+          <p className="mt-6 text-[1rem] leading-8 text-[rgba(58,58,58,0.74)]">
+            O acesso a live e as condicoes especiais serao liberados para quem
+            estiver dentro no momento certo. Quem deixar para depois pode ficar
+            sem essa vantagem.
+          </p>
+          <p className="mt-4 text-sm font-medium text-[rgba(53,14,9,0.7)]">
+            As vagas sao limitadas e podem fechar a qualquer momento.
+          </p>
+          <div className="mt-8">
+            <PrimaryCta label="Entrar agora" />
+          </div>
+        </Reveal>
+      </section>
+    </main>
   );
 }
