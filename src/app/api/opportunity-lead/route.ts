@@ -13,11 +13,12 @@ type OpportunityLeadPayload = {
 };
 
 export async function POST(request: Request) {
-  const webhookUrl = process.env.MAKE_WEBHOOK_URL;
+  const webhookUrl =
+    process.env.LEAD_WEBHOOK_URL ?? process.env.MAKE_WEBHOOK_URL;
 
   if (!webhookUrl) {
     return NextResponse.json(
-      { error: "MAKE_WEBHOOK_URL não configurado." },
+      { error: "LEAD_WEBHOOK_URL não configurado." },
       { status: 500 },
     );
   }
@@ -51,7 +52,7 @@ export async function POST(request: Request) {
 
   if (!response.ok) {
     return NextResponse.json(
-      { error: "Falha ao enviar os dados para o Make." },
+      { error: "Falha ao enviar os dados para o webhook." },
       { status: 502 },
     );
   }
