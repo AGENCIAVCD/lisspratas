@@ -38,15 +38,25 @@ export async function POST(request: Request) {
     );
   }
 
+  const leadFields = {
+    name: payload.name,
+    email: payload.email,
+    whatsapp: payload.whatsapp,
+    utm_source: payload.utm_source ?? "",
+    utm_medium: payload.utm_medium ?? "",
+    utm_campaign: payload.utm_campaign ?? "",
+    utm_content: payload.utm_content ?? "",
+    utm_term: payload.utm_term ?? "",
+    landing_page: payload.landing_page ?? "",
+    created_at: new Date().toISOString(),
+  };
+
   const response = await fetch(webhookUrl, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: JSON.stringify({
-      ...payload,
-      created_at: new Date().toISOString(),
-    }),
+    body: new URLSearchParams(leadFields),
     cache: "no-store",
   });
 
